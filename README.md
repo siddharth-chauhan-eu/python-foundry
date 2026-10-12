@@ -44,6 +44,8 @@ Applied analytics centered on the 2023 Data Jobs dataset, progressing from libra
 
 ```text
 python-learning/
+├── .github/
+│   └── PULL_REQUEST_TEMPLATE.md
 ├── 01-python-fundamentals/
 │   ├── exercises/                      # 11 exercises covering core language concepts
 │   ├── project/
@@ -74,6 +76,12 @@ pip install -r requirements.txt
 Module 01 uses the standard library only. Module 02 requires `datasets` · `pandas` · `matplotlib` · `numpy` · `seaborn`.
 
 ---
+
+## Pull requests
+
+Keep each pull request focused on one coherent change. Use the [pull request template](.github/PULL_REQUEST_TEMPLATE.md) to describe its purpose, related issue or decision, material changes, verification performed, and any documentation or compatibility impact.
+
+Preserve applicable licenses and attribution for third-party code, datasets, documentation, and other materials. The repository's MIT license does not replace the licenses or terms that apply to material from its original source.
 
 ## License
 
