@@ -210,8 +210,6 @@ __marimo__/
 01-python-fundamentals/project/dataset-summary/summary_report.txt
 01-python-fundamentals/project/dataset-summary/summary_report.json
 
-# Local scratch files
-#  commit_message.txt: reusable local file for composing multi-line commit
-#  messages (git commit -F commit_message.txt). Cleared and rewritten before
-#  each use, never committed.
-commit_message.txt
+# Node.js documentation tooling
+node_modules/
+npm-debug.log*

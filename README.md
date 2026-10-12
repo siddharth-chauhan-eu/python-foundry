@@ -1,87 +1,208 @@
-# python-learning
+# Python Learning
 
-> A structured Python learning portfolio — from language fundamentals to applied data analytics.
+[![Verification](https://github.com/siddharth-chauhan-eu/python-learning/actions/workflows/verification.yml/badge.svg)](https://github.com/siddharth-chauhan-eu/python-learning/actions/workflows/verification.yml)
 
----
+_Python projects spanning foundational tooling and domain-focused data work._
 
-## Modules
+This repository brings together practical Python implementations, utilities, and applied projects,
+from core language concepts to domain-focused data analysis. The work emphasizes sound engineering,
+clear reasoning, traceable inputs, and reproducible execution.
 
-| Module | Description |
-| --- | --- |
-| [`01-python-fundamentals/`](01-python-fundamentals/README.md) | Core language concepts through exercises and a CLI project |
-| [`02-data-analytics/`](02-data-analytics/README.md) | Applied data analytics from library basics to structured, evidence-aware analysis |
+Online courses, technical documentation, and public datasets provide references and inputs where
+relevant. Projects apply those concepts to concrete problems, with methods, extensions, sources,
+dataset revisions, assumptions, and limitations documented in context.
 
----
+## Portfolio
+
+- [01 — Python Fundamentals](01-python-fundamentals/README.md): core Python concepts and practical
+  tooling, including focused exercises and a CSV inspection CLI.
+- [02 — Data Analytics](02-data-analytics/README.md): data preparation, analysis, and visualization,
+  from library fundamentals to domain-focused job-market analysis.
 
 ## 01 — Python Fundamentals
 
-Eleven focused exercises covering the core Python language, followed by a standalone command-line project.
+The fundamentals module covers core language concepts through focused implementations, followed by a
+command-line project designed around a practical data-inspection task.
 
-| Component | Contents |
-| --- | --- |
-| `exercises/` | Output formatting · variables · types · strings · control flow · validation · data structures |
-| `project/dataset-summary/` | CLI tool for CSV structural inspection — standard library only |
+- **`exercises/`** — output formatting, variables and types, strings, control flow, validation, and
+  data structures.
+- **`project/dataset-summary/`** — a CSV structural-inspection CLI built with the Python standard
+  library.
 
-→ [`01-python-fundamentals/README.md`](01-python-fundamentals/README.md)
-
----
+See the [Python Fundamentals README](01-python-fundamentals/README.md) for implementation details
+and usage instructions.
 
 ## 02 — Data Analytics
 
-Applied analytics centered on the 2023 Data Jobs dataset, progressing from library fundamentals to an evidence-aware multi-notebook study.
+Applied analysis using Python libraries and the 2023 Data Jobs dataset. The work progresses from
+library fundamentals to domain-specific analysis, with project-level documentation for methods and
+source-data provenance.
 
-| Component | Contents |
-| --- | --- |
-| `exercises/` | Role matching and type conversion in pure Python |
-| `notebooks/` | Pandas and Matplotlib basics, then demand, trend, and compensation analysis for Germany |
-| `project/job-market-analysis/` | Five-notebook structured analysis of India's data-job market |
+- **`data-jobs-analysis/exercises/`** — data-oriented Python exercises, including role matching and
+  type conversion.
+- **`data-jobs-analysis/notebooks/`** — Pandas and Matplotlib fundamentals, followed by job-demand,
+  skill-trend, and compensation analysis focused on Germany.
+- **`data-jobs-analysis/project/job-market-analysis/`** — a five-notebook analysis of India's
+  data-job market.
 
-→ [`02-data-analytics/README.md`](02-data-analytics/README.md)
+The [Data Jobs Analysis README](02-data-analytics/data-jobs-analysis/README.md) documents the
+dataset source, pinned revision, and project-specific details. The dataset is not redistributed in
+this repository.
 
----
+See the [Data Analytics README](02-data-analytics/README.md) for the module overview.
 
-## Structure
+## Environment and dependencies
+
+The project environment is managed with [uv](https://docs.astral.sh/uv/). Direct dependencies are
+declared in `pyproject.toml`; `uv.lock` records the resolved dependency graph, including
+platform-specific markers. The committed lockfile lets `uv` select the applicable locked
+dependencies for each supported platform.
+
+### Supported setup
+
+The setup instructions below cover macOS, Windows, and Linux. Install `uv` using a method
+appropriate for your operating system. The official [uv installation guide] lists all supported
+methods. The project declares Python 3.11 or newer; `uv` can install a compatible interpreter when
+one is not already available.
+
+[uv installation guide]: https://docs.astral.sh/uv/getting-started/installation/
+
+**macOS (Homebrew):**
+
+```bash
+brew install uv
+```
+
+**Windows (PowerShell with WinGet):**
+
+```powershell
+winget install --id=astral-sh.uv -e
+```
+
+**Linux (official installer):**
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+Open a new terminal after installation, then clone the repository and create the environment from
+the committed lockfile:
+
+```bash
+git clone https://github.com/siddharth-chauhan-eu/python-learning.git
+cd python-learning
+uv sync --locked
+```
+
+`uv sync --locked` creates or synchronizes the project-local `.venv` and fails if the lockfile is
+out of date instead of silently updating it. `uv` selects a compatible Python interpreter according
+to the project configuration and can manage Python installations when needed.
+
+### Run the notebooks
+
+Launch JupyterLab from the repository root:
+
+```bash
+uv run --locked jupyter lab
+```
+
+Configure your editor or IDE to use the repository's `.venv` Python interpreter. For notebooks,
+select that environment as the notebook kernel. The interpreter is `.venv/bin/python` on macOS and
+Linux, or `.venv\Scripts\python.exe` on Windows.
+
+For a basic dependency and import check, run:
+
+```bash
+uv run --locked python -c "import datasets, matplotlib, numpy, pandas, seaborn; print('Core imports OK')"
+```
+
+The initial setup and projects that retrieve external datasets require network access. Reproducible
+package versions do not, by themselves, guarantee identical numerical results across operating
+systems or hardware. Projects that depend on external data should pin or otherwise document the
+input version and source it uses.
+
+### Maintain dependencies
+
+Use `uv` to change dependencies so the manifest and lockfile remain synchronized. Replace the
+placeholder names below with actual package names:
+
+```bash
+uv add package-name
+uv add --dev development-tool
+uv lock
+uv lock --check
+uv sync --locked
+```
+
+Commit `pyproject.toml` and `uv.lock` together after reviewing the changes and validating the
+result. Do not edit `uv.lock` manually. See the [uv project documentation] for additional commands
+and configuration options.
+
+[uv project documentation]: https://docs.astral.sh/uv/guides/projects/
+
+## Repository layout
 
 ```text
 python-learning/
 ├── .github/
 │   └── PULL_REQUEST_TEMPLATE.md
+│   ├── dependabot.yml
+│   └── workflows/
+│       └── verification.yml
 ├── 01-python-fundamentals/
-│   ├── exercises/                      # 11 exercises covering core language concepts
+│   ├── exercises/
 │   ├── project/
-│   │   └── dataset-summary/            # CSV inspection CLI tool
+│   │   └── dataset-summary/
 │   └── README.md
 ├── 02-data-analytics/
-│   └── data-jobs-analysis/
-│       ├── exercises/                  # 2 exercises covering data-oriented Python
-│       ├── notebooks/                  # 5 analysis notebooks + figures
-│       ├── project/
-│       │   └── job-market-analysis/    # 5-notebook India market analysis
-│       └── README.md
+│   ├── data-jobs-analysis/
+│   │   ├── exercises/
+│   │   ├── notebooks/
+│   │   ├── project/
+│   │   │   └── job-market-analysis/
+│   │   └── README.md
+│   └── README.md
+├── scripts/
+│   └── verify.py
 ├── .gitattributes
 ├── .gitignore
+├── .markdownlint.json
+├── .prettierrc.json
 ├── LICENSE
+├── package-lock.json
+├── package.json
+├── pyproject.toml
 ├── README.md
-└── requirements.txt
+└── uv.lock
 ```
 
----
+## Documentation checks
 
-## Requirements
+Run `npm ci` to install the pinned documentation tools, then run `npm run verify` for the full local
+pre-PR verification. The full check requires Node.js 22 or newer, npm, uv, and Git. It checks
+documentation formatting and lint, npm dependency security, the locked Python environment, Python
+source syntax and imports, Jupyter commands, and Git whitespace. It synchronizes the project-local
+`.venv` but does not format files or change Git staging.
+
+**Install the pinned documentation tools:**
 
 ```bash
-pip install -r requirements.txt
+npm ci
 ```
 
-Module 01 uses the standard library only. Module 02 requires `datasets` · `pandas` · `matplotlib` · `numpy` · `seaborn`.
+**Lint maintained Markdown:**
 
----
+```bash
+npm run lint:md
+```
 
-## Pull requests
+**Check formatting and Markdown lint together:**
 
-Keep each pull request focused on one coherent change. Use the [pull request template](.github/PULL_REQUEST_TEMPLATE.md) to describe its purpose, related issue or decision, material changes, verification performed, and any documentation or compatibility impact.
+```bash
+npm run check
+```
 
-Preserve applicable licenses and attribution for third-party code, datasets, documentation, and other materials. The repository's MIT license does not replace the licenses or terms that apply to material from its original source.
+To apply formatting before checking again, run `npm run format` and review the resulting changes.
 
 ## License
 
