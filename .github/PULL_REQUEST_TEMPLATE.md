@@ -1,37 +1,28 @@
 <!-- markdownlint-disable-file MD041 -->
-<!-- MD041 exception: GitHub renders this file as a pull-request template inside the pull-request page; the visible template intentionally begins with an h2. -->
+<!-- GitHub renders this template with level-two headings. -->
 
 ## Summary
 
-<!-- What does this change, and why is the change needed? -->
-
-## Related issue or decision
-
-<!-- Link a relevant issue or decision. Write "None" only when neither applies. -->
+<!-- State the goal of this change and why it is useful. -->
 
 ## Changes
 
-<!-- List the material changes in this pull request. -->
+<!-- Summarize meaningful outcomes; avoid a file-by-file inventory. -->
 
-- <!-- Add a material change. -->
+- <!-- Add a concise change. -->
 
 ## Verification
 
-<!-- Describe the checks, tests, builds, or manual verification performed, including commands where useful. If a check is not applicable, say why. -->
+<!-- List checks run and their results. Disclose relevant checks that failed or were not run. -->
 
-## Documentation and compatibility
+## Impact and maintenance notes (optional)
 
-<!-- Note documentation updates and any effect on public interfaces, data formats, configuration, or backwards compatibility. Write "None" where applicable. -->
+<!-- Record details that matter beyond this change: dependency or lockfile effects, supported Python or platform versions, dataset sources/revisions and assumptions, notebook or generated outputs, third-party licensing and attribution, known limitations, or follow-up. Remove this section if not relevant. -->
 
 ## Checklist
 
-All items apply to every pull request author, including maintainers.
-
-- [ ] This pull request contains one coherent change and no unrelated cleanup.
-- [ ] I reviewed the diff for accidental secrets, credentials, generated artifacts, or unrelated
-      files.
-- [ ] I identified any third-party, copied, generated, model-assisted, or otherwise non-original
-      material and checked that applicable permissions, licenses, and attribution notices are
-      preserved; I have not represented that material as exclusively my own.
-- [ ] Verification results and compatibility claims are accurate, and any unrun or failing relevant
-      check is disclosed.
+- [ ] I reviewed the diff for unintended changes, secrets, credentials, temporary files, and
+      unintended generated output.
+- [ ] Verification results are accurately reported, including relevant failed or unrun checks.
+- [ ] Relevant compatibility, dependency, data provenance, licensing, and attribution implications
+      are documented where applicable.
