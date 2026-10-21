@@ -65,8 +65,6 @@ appropriate for your operating system. The official [uv installation guide] list
 methods. The project declares Python 3.11 or newer; `uv` can install a compatible interpreter when
 one is not already available.
 
-[uv installation guide]: https://docs.astral.sh/uv/getting-started/installation/
-
 **macOS (Homebrew):**
 
 ```bash
@@ -138,8 +136,6 @@ Commit `pyproject.toml` and `uv.lock` together after reviewing the changes and v
 result. Do not edit `uv.lock` manually. See the [uv project documentation] for additional commands
 and configuration options.
 
-[uv project documentation]: https://docs.astral.sh/uv/guides/projects/
-
 ## Repository layout
 
 ```text
@@ -163,46 +159,24 @@ python-learning/
 │   │   └── README.md
 │   └── README.md
 ├── scripts/
+│   ├── check_markdown.py
 │   └── verify.py
 ├── .gitattributes
 ├── .gitignore
-├── .markdownlint.json
-├── .prettierrc.json
+├── .mdformat.toml
 ├── LICENSE
-├── package-lock.json
-├── package.json
 ├── pyproject.toml
 ├── README.md
 └── uv.lock
 ```
 
-## Documentation checks
+## Checks
 
-Run `npm ci` to install the pinned documentation tools, then run `npm run verify` for the full local
-pre-PR verification. The full check requires Node.js 22 or newer, npm, uv, and Git. It checks
-documentation formatting and lint, npm dependency security, the locked Python environment, Ruff lint
-and format checks, tests, Python source syntax and imports, Jupyter commands, and Git whitespace. It
-synchronizes the project-local `.venv` but does not format files or change Git staging.
-
-**Install the pinned documentation tools:**
-
-```bash
-npm ci
-```
-
-**Lint maintained Markdown:**
-
-```bash
-npm run lint:md
-```
-
-**Check formatting and Markdown lint together:**
-
-```bash
-npm run check
-```
-
-To apply formatting before checking again, run `npm run format` and review the resulting changes.
+Run `uv run --locked python scripts/verify.py` for the full local pre-PR verification. It requires
+only uv and Git. It checks Ruff lint and format, tests, Markdown lint and format, the locked Python
+environment, Python imports, Jupyter commands, and Git whitespace. `uv run --locked` first
+synchronizes the project-local `.venv` from `uv.lock`. The script does not format files or change
+Git staging.
 
 **Lint and format Python (Ruff, pinned in `uv.lock`):**
 
@@ -219,6 +193,18 @@ To apply Ruff formatting, run `uv run --locked ruff format .` and review the res
 uv run --locked pytest
 ```
 
+**Check Markdown (PyMarkdown lint and mdformat format, pinned in `uv.lock`):**
+
+```bash
+uv run --locked python scripts/check_markdown.py
+```
+
+To apply Markdown formatting, run `uv run --locked mdformat $(git ls-files '*.md')` and review the
+resulting changes.
+
 ## License
 
 This repository is licensed under the [MIT License](LICENSE).
+
+[uv installation guide]: https://docs.astral.sh/uv/getting-started/installation/
+[uv project documentation]: https://docs.astral.sh/uv/guides/projects/
