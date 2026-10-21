@@ -38,6 +38,7 @@ def main() -> None:
     run_check(
         "Ruff format check", [sys.executable, "-m", "ruff", "format", "--check", "."]
     )
+    run_check("Tests", [sys.executable, "-m", "pytest"])
     run_check(
         "Python dependency consistency",
         [uv, "pip", "check", "--python", sys.executable],

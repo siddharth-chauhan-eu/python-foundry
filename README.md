@@ -181,7 +181,7 @@ python-learning/
 Run `npm ci` to install the pinned documentation tools, then run `npm run verify` for the full local
 pre-PR verification. The full check requires Node.js 22 or newer, npm, uv, and Git. It checks
 documentation formatting and lint, npm dependency security, the locked Python environment, Ruff lint
-and format checks, Python source syntax and imports, Jupyter commands, and Git whitespace. It
+and format checks, tests, Python source syntax and imports, Jupyter commands, and Git whitespace. It
 synchronizes the project-local `.venv` but does not format files or change Git staging.
 
 **Install the pinned documentation tools:**
@@ -212,6 +212,12 @@ uv run --locked ruff format --check .
 ```
 
 To apply Ruff formatting, run `uv run --locked ruff format .` and review the resulting changes.
+
+**Run the tests (pytest, pinned in `uv.lock`):**
+
+```bash
+uv run --locked pytest
+```
 
 ## License
 
