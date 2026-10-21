@@ -1,0 +1,18 @@
+name: Suggestion
+description: Suggest an improvement to the code, the documentation, or the tooling.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or motivation
+      description: Describe what is missing or unclear, and why it matters.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the change you suggest, and any alternatives you considered.
+    validations:
+      required: true

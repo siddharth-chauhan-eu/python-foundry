@@ -1,0 +1,41 @@
+name: Bug report
+description: Report incorrect behavior, a failing check, or broken documentation.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not report security vulnerabilities here. Use **Report a security vulnerability** on the
+        issue chooser instead.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened
+      description: Describe the problem and the file, notebook, or command involved.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: List the exact commands or steps, starting from a fresh clone.
+      placeholder: |
+        1. git clone ...
+        2. uv sync --locked
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, Python version, and uv version.
+      placeholder: Ubuntu 24.04, Python 3.11, uv 0.12.23
+    validations:
+      required: true
