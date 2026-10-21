@@ -17,6 +17,7 @@ dev = [
     "ipykernel>=7.2.0,<8.0.0",
     "jupyterlab>=4.6.4,<5.0.0",
     "notebook>=7.6.3,<8.0.0",
+    "pytest==9.1.1",
     "ruff==0.17.1",
 ]
 
@@ -26,3 +27,7 @@ package = false
 [tool.ruff]
 # Ruff 0.17.1 default rule set; the target Python version comes from requires-python.
 line-length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]
