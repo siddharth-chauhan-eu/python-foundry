@@ -3177,7 +3177,7 @@ wheels = [
 ]
 
 [[package]]
-name = "python-learning"
+name = "python-foundry"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

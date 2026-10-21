@@ -1,5 +1,5 @@
 [project]
-name = "python-learning"
+name = "python-foundry"
 version = "0.1.0"
 description = "Python projects spanning foundational tooling and domain-focused data work"
 readme = "README.md"

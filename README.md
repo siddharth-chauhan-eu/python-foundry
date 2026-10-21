@@ -1,6 +1,6 @@
-# Python Learning
+# Python Foundry
 
-[![Verification](https://github.com/siddharth-chauhan-eu/python-learning/actions/workflows/verification.yml/badge.svg)](https://github.com/siddharth-chauhan-eu/python-learning/actions/workflows/verification.yml)
+[![Verification](https://github.com/siddharth-chauhan-eu/python-foundry/actions/workflows/verification.yml/badge.svg)](https://github.com/siddharth-chauhan-eu/python-foundry/actions/workflows/verification.yml)
 
 _Python projects spanning foundational tooling and domain-focused data work._
 
@@ -87,8 +87,8 @@ Open a new terminal after installation, then clone the repository and create the
 the committed lockfile:
 
 ```bash
-git clone https://github.com/siddharth-chauhan-eu/python-learning.git
-cd python-learning
+git clone https://github.com/siddharth-chauhan-eu/python-foundry.git
+cd python-foundry
 uv sync --locked
 ```
 
@@ -139,7 +139,7 @@ and configuration options.
 ## Repository layout
 
 ```text
-python-learning/
+python-foundry/
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
 │   │   ├── bug_report.yml
@@ -161,6 +161,9 @@ python-learning/
 │   │   ├── project/
 │   │   │   └── job-market-analysis/
 │   │   └── README.md
+│   └── README.md
+├── decisions/
+│   ├── 0001-repository-name.md
 │   └── README.md
 ├── scripts/
 │   ├── check_markdown.py
