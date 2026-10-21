@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import ast
 import shutil
 import subprocess
 import sys
@@ -18,31 +17,6 @@ def run_check(label: str, command: list[str]) -> None:
         print(f"FAILED: {label} (exit code {result.returncode})", flush=True)
         raise SystemExit(result.returncode)
 
-
-
-def check_python_syntax() -> None:
-    print("\n=== Python source syntax ===", flush=True)
-    roots = (
-        ROOT / "01-python-fundamentals",
-        ROOT / "02-data-analytics",
-        ROOT / "scripts",
-    )
-    files = sorted(
-        path
-        for root in roots
-        for path in root.rglob("*.py")
-    )
-    if not files:
-        raise SystemExit("No Python source files found to syntax-check.")
-
-    for path in files:
-        try:
-            ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
-        except (SyntaxError, UnicodeDecodeError) as exc:
-            print(f"FAILED: {path}: {exc}", flush=True)
-            raise SystemExit(1) from exc
-
-    print(f"Syntax OK: {len(files)} Python files", flush=True)
 
 def main() -> None:
     expected_env = (ROOT / ".venv").resolve()
@@ -60,8 +34,10 @@ def main() -> None:
     if not uv or not jupyter:
         raise SystemExit("Required command not found: uv or jupyter.")
 
-    check_python_syntax()
-
+    run_check("Ruff lint", [sys.executable, "-m", "ruff", "check", "."])
+    run_check(
+        "Ruff format check", [sys.executable, "-m", "ruff", "format", "--check", "."]
+    )
     run_check(
         "Python dependency consistency",
         [uv, "pip", "check", "--python", sys.executable],
@@ -71,9 +47,11 @@ def main() -> None:
         [
             sys.executable,
             "-c",
-            "import datasets, ipykernel, jupyterlab, matplotlib.pyplot, "
-            "notebook, numpy, pandas, seaborn; "
-            "print('Python imports OK')",
+            (
+                "import datasets, ipykernel, jupyterlab, matplotlib.pyplot, "
+                "notebook, numpy, pandas, seaborn; "
+                "print('Python imports OK')"
+            ),
         ],
     )
     run_check("JupyterLab version", [jupyter, "lab", "--version"])

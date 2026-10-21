@@ -1,8 +1,7 @@
 raw = "968-Maria, ( D@t@ Engineer );; 27y"
 
 clean = (
-    raw
-    .replace("968-", "")
+    raw.replace("968-", "")
     .replace(",", "")
     .replace("(", "")
     .replace(")", "")
