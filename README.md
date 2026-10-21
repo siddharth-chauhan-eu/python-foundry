@@ -169,6 +169,7 @@ python-learning/
 ├── .gitattributes
 ├── .gitignore
 ├── .mdformat.toml
+├── CONTRIBUTING.md
 ├── LICENSE
 ├── pyproject.toml
 ├── README.md
@@ -210,6 +211,10 @@ uv run --locked python scripts/check_markdown.py
 
 To apply Markdown formatting, run `uv run --locked mdformat $(git ls-files '*.md')` and review the
 resulting changes.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to report issues and propose changes.
 
 ## Security
 
