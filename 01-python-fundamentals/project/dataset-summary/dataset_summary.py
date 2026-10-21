@@ -9,8 +9,8 @@ Handles standard CSVs and wide-format datasets (e.g., World Bank exports).
 """
 
 import csv
-import sys
 import json
+import sys
 from pathlib import Path
 
 
@@ -37,10 +37,10 @@ def read_csv_file(file_path):
         rows = list(reader)
 
         if rows:
-            columns = [c for c in rows[0].keys() if c and c.strip()]
+            columns = [c for c in rows[0] if c and c.strip()]
             if len(columns) >= 3:
                 return rows
-    except Exception:
+    except csv.Error:
         pass  # Fallback handles failure
 
     # Step 2: Fallback for wide datasets
@@ -51,10 +51,10 @@ def read_csv_file(file_path):
                 rows = list(reader)
 
                 if rows:
-                    columns = [c for c in rows[0].keys() if c and c.strip()]
+                    columns = [c for c in rows[0] if c and c.strip()]
                     if len(columns) >= 3:
                         return rows
-            except Exception:
+            except csv.Error:
                 continue
 
     return []
@@ -119,7 +119,7 @@ def generate_summary(rows, file_name):
     if not rows:
         return "Empty dataset", {}, {}, {}, []
 
-    columns = [col for col in rows[0].keys() if col and col.strip()]
+    columns = [col for col in rows[0] if col and col.strip()]
 
     summary = [
         "=" * 30,

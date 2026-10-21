@@ -1,10 +1,12 @@
 # 1. Name & age check
+import sys
+
 name = input("Enter name: ").strip()
 age_input = input("Enter age: ").strip()
 
 if not age_input.isdigit():
     print("Invalid age input")
-    exit()
+    sys.exit()
 
 age = int(age_input)
 
@@ -47,18 +49,18 @@ valid_roles = ["admin", "moderator", "user"]
 role = input("Enter role (admin/moderator/user): ").strip().lower()
 if role not in valid_roles:
     print("Invalid role")
-    exit()
+    sys.exit()
 
 # early exit for user
 if role == "user":
     print("Access denied")
-    exit()
+    sys.exit()
 
 # banned
 is_banned_input = input("Is banned? (yes/no): ").strip().lower()
 if is_banned_input not in ["yes", "no"]:
     print("Invalid input for banned status")
-    exit()
+    sys.exit()
 
 is_banned = is_banned_input == "yes"
 
@@ -66,7 +68,7 @@ is_banned = is_banned_input == "yes"
 is_verified_input = input("Is verified? (yes/no): ").strip().lower()
 if is_verified_input not in ["yes", "no"]:
     print("Invalid input for verification")
-    exit()
+    sys.exit()
 
 is_verified = is_verified_input == "yes"
 
