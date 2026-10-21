@@ -1,8 +1,6 @@
-# 0001: Repository name
+# 0001. Repository name
 
-**Status:** Accepted
-
-**Date:** 2026-10-21
+**Status:** Accepted **Date:** 2026-10-22
 
 ## Context
 
