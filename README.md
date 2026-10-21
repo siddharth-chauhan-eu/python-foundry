@@ -141,6 +141,10 @@ and configuration options.
 ```text
 python-learning/
 ├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.yml
+│   │   ├── config.yml
+│   │   └── suggestion.yml
 │   ├── PULL_REQUEST_TEMPLATE.md
 │   ├── dependabot.yml
 │   └── workflows/
