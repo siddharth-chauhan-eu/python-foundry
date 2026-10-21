@@ -168,6 +168,7 @@ python-learning/
 ├── LICENSE
 ├── pyproject.toml
 ├── README.md
+├── SECURITY.md
 └── uv.lock
 ```
 
@@ -205,6 +206,11 @@ uv run --locked python scripts/check_markdown.py
 
 To apply Markdown formatting, run `uv run --locked mdformat $(git ls-files '*.md')` and review the
 resulting changes.
+
+## Security
+
+Report suspected vulnerabilities privately, as described in [SECURITY.md](SECURITY.md). Do not open
+a public issue for a vulnerability.
 
 ## License
 
