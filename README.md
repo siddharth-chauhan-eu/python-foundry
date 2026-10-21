@@ -141,7 +141,7 @@ and configuration options.
 ```text
 python-learning/
 ├── .github/
-│   └── PULL_REQUEST_TEMPLATE.md
+│   ├── PULL_REQUEST_TEMPLATE.md
 │   ├── dependabot.yml
 │   └── workflows/
 │       └── verification.yml
@@ -161,6 +161,7 @@ python-learning/
 ├── scripts/
 │   ├── check_markdown.py
 │   └── verify.py
+├── tests/
 ├── .gitattributes
 ├── .gitignore
 ├── .mdformat.toml
@@ -177,6 +178,9 @@ only uv and Git. It checks Ruff lint and format, tests, Markdown lint and format
 environment, Python imports, Jupyter commands, and Git whitespace. `uv run --locked` first
 synchronizes the project-local `.venv` from `uv.lock`. The script does not format files or change
 Git staging.
+
+GitHub Actions runs the same script on every pull request and on every push to `main`. It uses
+Python 3.11 on Linux, macOS, and Windows, and Python 3.14 on Linux.
 
 **Lint and format Python (Ruff, pinned in `uv.lock`):**
 
