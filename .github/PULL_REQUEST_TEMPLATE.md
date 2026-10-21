@@ -1,4 +1,5 @@
-<!-- markdownlint-disable-file MD041 -->
+<!-- pyml disable md041 -->
+
 <!-- GitHub renders this template with level-two headings. -->
 
 ## Summary
@@ -22,7 +23,7 @@
 ## Checklist
 
 - [ ] I reviewed the diff for unintended changes, secrets, credentials, temporary files, and
-      unintended generated output.
+  unintended generated output.
 - [ ] Verification results are accurately reported, including relevant failed or unrun checks.
 - [ ] Relevant compatibility, dependency, data provenance, licensing, and attribution implications
-      are documented where applicable.
+  are documented where applicable.

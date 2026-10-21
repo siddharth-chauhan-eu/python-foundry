@@ -209,7 +209,3 @@ __marimo__/
 # Auto-generated project reports
 01-python-fundamentals/project/dataset-summary/summary_report.txt
 01-python-fundamentals/project/dataset-summary/summary_report.json
-
-# Node.js documentation tooling
-node_modules/
-npm-debug.log*

@@ -39,6 +39,7 @@ def main() -> None:
         "Ruff format check", [sys.executable, "-m", "ruff", "format", "--check", "."]
     )
     run_check("Tests", [sys.executable, "-m", "pytest"])
+    run_check("Markdown", [sys.executable, str(ROOT / "scripts" / "check_markdown.py")])
     run_check(
         "Python dependency consistency",
         [uv, "pip", "check", "--python", sys.executable],
@@ -57,6 +58,8 @@ def main() -> None:
     )
     run_check("JupyterLab version", [jupyter, "lab", "--version"])
     run_check("Notebook version", [jupyter, "notebook", "--version"])
+    run_check("Whitespace errors (unstaged)", ["git", "diff", "--check"])
+    run_check("Whitespace errors (staged)", ["git", "diff", "--cached", "--check"])
 
     print("\nAll Python-specific verification checks passed.")
 
