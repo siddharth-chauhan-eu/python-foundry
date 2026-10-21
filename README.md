@@ -169,6 +169,7 @@ python-learning/
 ├── .gitattributes
 ├── .gitignore
 ├── .mdformat.toml
+├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── LICENSE
 ├── pyproject.toml
@@ -223,7 +224,9 @@ a public issue for a vulnerability.
 
 ## License
 
-This repository is licensed under the [MIT License](LICENSE).
+This repository is licensed under the [MIT License](LICENSE). The exception is
+[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), which is adapted from the Contributor Covenant 3.0 and
+licensed under CC BY-SA 4.0.
 
 [uv installation guide]: https://docs.astral.sh/uv/getting-started/installation/
 [uv project documentation]: https://docs.astral.sh/uv/guides/projects/

@@ -3,6 +3,8 @@
 Thank you for your interest. This is a personal Python practice repository. Issues and pull requests
 are reviewed as capacity allows, and no response time is promised.
 
+Participation is governed by the [Code of Conduct](CODE_OF_CONDUCT.md).
+
 ## Before opening an issue
 
 1. Search existing issues first.
