@@ -33,10 +33,37 @@ uv run --locked python scripts/verify.py
 
 The [README](README.md) describes the setup and each individual check.
 
+Changes reach `main` through pull requests, and each pull request is squash merged. The pull request
+title becomes the commit subject, so write it in the commit format below. Write the description in
+the pull request template. The verification workflow must pass before a merge.
+
 ## Commit messages
 
-Use a short, imperative subject with a type prefix, such as `fix:`, `docs:`, `test:`, `ci:`, or
-`chore:`.
+Start the subject with a type, an optional scope in parentheses, and a colon. Then write a short
+description in the imperative mood, without a final period. Use a scope only for a clearly bounded
+area, as in `docs(decisions): correct decision 0001`.
+
+| Type       | Use for                                     |
+| ---------- | ------------------------------------------- |
+| `feat`     | A new feature or project                    |
+| `fix`      | A correction to behavior or content         |
+| `docs`     | Documentation only                          |
+| `refactor` | A code change that does not change behavior |
+| `test`     | Tests only                                  |
+| `chore`    | Maintenance, such as dependency updates     |
+| `ci`       | Changes to workflows and automation         |
+
+Keep each commit to one logical change. When the subject is not enough, add a body as a bullet list
+that says what changed and why.
+
+## Documentation
+
+- Write in plain English with short sentences.
+- Keep Markdown within the formatting and lint rules that `scripts/verify.py` checks.
+- Name the source of any data, code, or idea that you use. Pin the revision of an external dataset.
+  Record assumptions and limitations next to the result.
+- Do not state details that change often, such as counts, dates, or version lists. Link to the file
+  that holds them.
 
 ## Decision records
 
@@ -101,7 +128,8 @@ clear in Context, Decision, or Consequences.
 ## Acceptance and licensing
 
 Submitting a pull request does not guarantee that it will be merged. Changes are judged on fit,
-correctness, verification, and maintainability.
+correctness, verification, and maintainability. The maintainer makes the final decision on each
+change.
 
 By submitting a contribution, you confirm that you have the right to submit it and that it is
 licensed under the repository's [MIT License](LICENSE). Do not submit material you do not have the
