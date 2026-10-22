@@ -4,10 +4,10 @@ Core language concepts covered through progressive exercises and a CLI project.
 
 ## Contents
 
-| Path                       | Description                                        |
-| -------------------------- | -------------------------------------------------- |
-| `exercises/`               | 11 focused exercises covering core Python concepts |
-| `project/dataset-summary/` | CLI tool for CSV structural inspection             |
+| Path                       | Description                                     |
+| -------------------------- | ----------------------------------------------- |
+| `exercises/`               | Focused exercises covering core Python concepts |
+| `project/dataset-summary/` | CLI tool for CSV structural inspection          |
 
 ## Exercises
 

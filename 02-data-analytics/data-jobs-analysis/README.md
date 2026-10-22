@@ -5,7 +5,7 @@ Applied data analytics using 2023 data-job postings, with Germany as the main wo
 Exercises build the data-oriented Python patterns needed before touching a DataFrame. Notebooks
 apply those skills progressively — from library fundamentals through demand analysis, trend
 tracking, and compensation investigation. The project applies the same methodology in a structured
-five-notebook study of the Indian market.
+study of the Indian market.
 
 ## Contents
 

@@ -2,9 +2,9 @@
 
 ## Scope
 
-This repository holds personal Python practice and data-analysis work. It has no releases and no
-deployed service. Vulnerability reports are accepted for the current `main` branch and for the
-dependencies pinned in `uv.lock`.
+This repository holds personal Python projects. It has no releases and no deployed service.
+Vulnerability reports are accepted for the current `main` branch and for the dependencies pinned in
+`uv.lock`.
 
 ## Reporting a vulnerability
 

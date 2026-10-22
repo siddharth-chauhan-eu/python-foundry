@@ -4,8 +4,7 @@ From DataFrame basics to evidence-aware analysis using real-world job-posting da
 
 This module builds applied data analytics capability in a single coherent arc — exercises establish
 Python patterns for structured data, notebooks develop library skills and apply them to Germany's
-data-job market, and a project extends the methodology into a structured five-notebook study of
-India.
+data-job market, and a project extends the methodology into a structured study of India.
 
 ## Contents
 
