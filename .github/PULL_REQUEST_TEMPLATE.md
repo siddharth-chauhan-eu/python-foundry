@@ -6,6 +6,10 @@
 
 <!-- State the goal of this change and why it is useful. -->
 
+## Related issue or decision (optional)
+
+<!-- Link the related issue or decision record, such as `decision 0002`. Remove this section if none applies. -->
+
 ## Changes
 
 <!-- Summarize meaningful outcomes; avoid a file-by-file inventory. -->
@@ -22,8 +26,10 @@
 
 ## Checklist
 
+- [ ] The pull request addresses one coherent change.
 - [ ] I reviewed the diff for unintended changes, secrets, credentials, temporary files, and
   unintended generated output.
 - [ ] Verification results are accurately reported, including relevant failed or unrun checks.
+- [ ] I updated documentation where behavior, setup, or commands changed.
 - [ ] Relevant compatibility, dependency, data provenance, licensing, and attribution implications
   are documented where applicable.
