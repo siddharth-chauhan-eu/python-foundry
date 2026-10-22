@@ -2,54 +2,19 @@
 
 [![Verification](https://github.com/siddharth-chauhan-eu/python-foundry/actions/workflows/verification.yml/badge.svg)](https://github.com/siddharth-chauhan-eu/python-foundry/actions/workflows/verification.yml)
 
-_Python projects spanning foundational tooling and domain-focused data work._
-
-This repository brings together practical Python implementations, utilities, and applied projects,
-from core language concepts to domain-focused data analysis. The work emphasizes sound engineering,
-clear reasoning, traceable inputs, and reproducible execution.
+Python projects built to be reproducible and traceable. Each project locks its environment and
+documents its sources, assumptions, and limitations.
 
 Online courses, technical documentation, and public datasets provide references and inputs where
-relevant. Projects apply those concepts to concrete problems, with methods, extensions, sources,
-dataset revisions, assumptions, and limitations documented in context.
+relevant. Each project applies them to a concrete problem and documents its methods, extensions,
+sources, dataset revisions, assumptions, and limitations in context.
 
-## Portfolio
+## Contents
 
-- [01 — Python Fundamentals](01-python-fundamentals/README.md): core Python concepts and practical
-  tooling, including focused exercises and a CSV inspection CLI.
-- [02 — Data Analytics](02-data-analytics/README.md): data preparation, analysis, and visualization,
-  from library fundamentals to domain-focused job-market analysis.
-
-## 01 — Python Fundamentals
-
-The fundamentals module covers core language concepts through focused implementations, followed by a
-command-line project designed around a practical data-inspection task.
-
-- **`exercises/`** — output formatting, variables and types, strings, control flow, validation, and
-  data structures.
-- **`project/dataset-summary/`** — a CSV structural-inspection CLI built with the Python standard
-  library.
-
-See the [Python Fundamentals README](01-python-fundamentals/README.md) for implementation details
-and usage instructions.
-
-## 02 — Data Analytics
-
-Applied analysis using Python libraries and the 2023 Data Jobs dataset. The work progresses from
-library fundamentals to domain-specific analysis, with project-level documentation for methods and
-source-data provenance.
-
-- **`data-jobs-analysis/exercises/`** — data-oriented Python exercises, including role matching and
-  type conversion.
-- **`data-jobs-analysis/notebooks/`** — Pandas and Matplotlib fundamentals, followed by job-demand,
-  skill-trend, and compensation analysis focused on Germany.
-- **`data-jobs-analysis/project/job-market-analysis/`** — a five-notebook analysis of India's
-  data-job market.
-
-The [Data Jobs Analysis README](02-data-analytics/data-jobs-analysis/README.md) documents the
-dataset source, pinned revision, and project-specific details. The dataset is not redistributed in
-this repository.
-
-See the [Data Analytics README](02-data-analytics/README.md) for the module overview.
+- [01 — Python Fundamentals](01-python-fundamentals/README.md): core language exercises and a CSV
+  inspection command-line tool.
+- [02 — Data Analytics](02-data-analytics/README.md): data preparation, analysis, and visualization
+  applied to public job-posting data. The dataset is not redistributed in this repository.
 
 ## Environment and dependencies
 
@@ -141,44 +106,11 @@ and configuration options.
 ```text
 python-foundry/
 ├── .github/
-│   ├── ISSUE_TEMPLATE/
-│   │   ├── bug_report.yml
-│   │   ├── config.yml
-│   │   └── suggestion.yml
-│   ├── PULL_REQUEST_TEMPLATE.md
-│   ├── dependabot.yml
-│   └── workflows/
-│       └── verification.yml
 ├── 01-python-fundamentals/
-│   ├── exercises/
-│   ├── project/
-│   │   └── dataset-summary/
-│   └── README.md
 ├── 02-data-analytics/
-│   ├── data-jobs-analysis/
-│   │   ├── exercises/
-│   │   ├── notebooks/
-│   │   ├── project/
-│   │   │   └── job-market-analysis/
-│   │   └── README.md
-│   └── README.md
 ├── decisions/
-│   ├── 0001-repository-name.md
-│   └── README.md
 ├── scripts/
-│   ├── check_markdown.py
-│   └── verify.py
-├── tests/
-├── .gitattributes
-├── .gitignore
-├── .mdformat.toml
-├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── pyproject.toml
-├── README.md
-├── SECURITY.md
-└── uv.lock
+└── tests/
 ```
 
 ## Checks
@@ -189,8 +121,8 @@ environment, Python imports, Jupyter commands, and Git whitespace. `uv run --loc
 synchronizes the project-local `.venv` from `uv.lock`. The script does not format files or change
 Git staging.
 
-GitHub Actions runs the same script on every pull request and on every push to `main`. It uses
-Python 3.11 on Linux, macOS, and Windows, and Python 3.14 on Linux.
+GitHub Actions runs the same script on every pull request and on every push to `main`. The Python
+versions and operating systems it covers are defined in `.github/workflows/verification.yml`.
 
 **Lint and format Python (Ruff, pinned in `uv.lock`):**
 

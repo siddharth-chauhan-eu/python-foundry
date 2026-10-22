@@ -1,7 +1,7 @@
 # Contributing
 
-Thank you for your interest. This is a personal Python practice repository. Issues and pull requests
-are reviewed as capacity allows, and no response time is promised.
+Thank you for your interest. This is a personal Python repository. Issues and pull requests are
+reviewed as capacity allows, and no response time is promised.
 
 Participation is governed by the [Code of Conduct](CODE_OF_CONDUCT.md).
 
@@ -25,7 +25,7 @@ A pull request should:
 - avoid unrelated refactors and formatting changes.
 
 Run the full local verification before you open the pull request, and report the result in the pull
-request template:
+request description:
 
 ```bash
 uv run --locked python scripts/verify.py

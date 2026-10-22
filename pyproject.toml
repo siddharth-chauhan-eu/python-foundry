@@ -1,7 +1,7 @@
 [project]
 name = "python-foundry"
 version = "0.1.0"
-description = "Python projects spanning foundational tooling and domain-focused data work"
+description = "Python projects with locked environments and documented sources"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
