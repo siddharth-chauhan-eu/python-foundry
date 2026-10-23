@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+type: software
+title: "Python Foundry"
+authors:
+  - family-names: "Chauhan"
+    given-names: "Siddharth"
+repository-code: "https://github.com/siddharth-chauhan-eu/python-foundry"
