@@ -8,12 +8,6 @@ This module builds applied data analytics capability in a single coherent arc â€
 Python patterns for structured data, notebooks develop library skills and apply them to Germany's
 data-job market, and a project extends the methodology into a structured study of India.
 
-## Contents
-
-| Path                  | Description                                                        |
-| --------------------- | ------------------------------------------------------------------ |
-| `data-jobs-analysis/` | Exercises, notebooks, and project using the 2023 Data Jobs dataset |
-
 ## Learning Arc
 
 | Phase          | Location                                          | Focus                                                          |
@@ -25,10 +19,11 @@ data-job market, and a project extends the methodology into a structured study o
 
 ## Dataset
 
-The notebooks and project use the
-[Luke Barousse Data Jobs dataset](https://huggingface.co/datasets/lukebarousse/data_jobs) â€” a
-collection of data-role job postings from calendar year 2023, covering multiple countries and role
-types. The pure-Python exercises use small in-repository examples rather than the external dataset.
+The notebooks and project use the Data Jobs dataset, a collection of data-role job postings from
+calendar year 2023. It covers multiple countries and role types. The
+[Data Jobs Analysis](data-jobs-analysis/README.md#data-source) README lists the source, the pinned
+revision, and the checksum. The pure-Python exercises use small in-repository examples rather than
+the external dataset.
 
 ## Environment setup
 

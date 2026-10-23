@@ -130,14 +130,10 @@ counts alone.
 
 ## Data and Limitations
 
-- **Source:**
-  [Luke Barousse Data Jobs dataset](https://huggingface.co/datasets/lukebarousse/data_jobs)
-- **License:** see the [third-party notices](../../../../THIRD_PARTY_NOTICES.md)
-- **Dataset revision:** `1d815e9ce232eb27db11939c44eb048fe6d2e9ab`
-- **`data_jobs.csv` SHA-256:** `635241ed09ccee18bdae1f83b45f26d6759e0aa2513c529f6190e9054062436c`
-
-The dataset contains job postings from calendar year 2023. The notebooks pin the revision above so
-the analytical input is stable across reruns. Important limitations:
+The dataset contains job postings from calendar year 2023. The
+[data source](../../README.md#data-source) section of the Data Jobs Analysis README lists the
+source, the license, the pinned revision, and the checksum. The notebooks use that revision so the
+analytical input is stable across reruns. Important limitations:
 
 - Posting volume is not equivalent to hires or unique vacancies.
 - Duplicate or syndicated listings may inflate demand.
