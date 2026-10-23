@@ -77,4 +77,5 @@ python dataset_summary.py sample_data.csv
 
 ## Requirements
 
-- Python 3.x (standard library only)
+- Python standard library only. The [project configuration](../pyproject.toml) sets the supported
+  Python versions.

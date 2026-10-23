@@ -9,11 +9,11 @@ study of the Indian market.
 
 ## Contents
 
-| Path                           | Description                                        |
-| ------------------------------ | -------------------------------------------------- |
-| `exercises/`                   | 2 exercises covering data-oriented Python patterns |
-| `notebooks/`                   | 5 analysis notebooks with figures                  |
-| `project/job-market-analysis/` | Structured analysis of India's data-job market     |
+| Path                           | Description                                    |
+| ------------------------------ | ---------------------------------------------- |
+| `exercises/`                   | Exercises on data-oriented Python patterns     |
+| `notebooks/`                   | Analysis notebooks with figures                |
+| `project/job-market-analysis/` | Structured analysis of India's data-job market |
 
 ## Exercises
 
