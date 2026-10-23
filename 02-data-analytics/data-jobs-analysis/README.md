@@ -50,11 +50,11 @@ scoped to Germany unless stated otherwise.
 
 Introduces the data loading, cleanup, and aggregation workflow used throughout the module. Covers
 datetime conversion, country-based filtering, and `groupby` salary statistics by job title. No chart
-is produced; the focus is understanding the dataset before visualising it.
+is produced; the focus is understanding the dataset before visualizing it.
 
 ### 02 — Matplotlib Basics
 
-Produces the first visualisation from the dataset: a horizontal bar chart of median salary by job
+Produces the first visualization from the dataset: a horizontal bar chart of median salary by job
 title across all global postings.
 
 ![Median salary by job title](notebooks/figures/median_salary_by_job_title.png)
