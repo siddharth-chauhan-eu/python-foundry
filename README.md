@@ -157,11 +157,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to report issues and propose chan
 Report suspected vulnerabilities privately, as described in [SECURITY.md](SECURITY.md). Do not open
 a public issue for a vulnerability.
 
-## License
+## Licensing
 
-This repository is licensed under the [MIT License](LICENSE). The exception is
-[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), which is adapted from the Contributor Covenant 3.0 and
-licensed under CC BY-SA 4.0.
+This repository uses more than one license. The [licensing map](LICENSING.md) lists the license for
+each type of content.
 
 [uv installation guide]: https://docs.astral.sh/uv/getting-started/installation/
 [uv project documentation]: https://docs.astral.sh/uv/guides/projects/

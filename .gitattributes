@@ -1,1 +1,4 @@
 * text=auto eol=lf
+
+# Keep the CC BY 4.0 legal code identical to the official text, including its last blank line.
+LICENSE-CONTENT whitespace=-blank-at-eof

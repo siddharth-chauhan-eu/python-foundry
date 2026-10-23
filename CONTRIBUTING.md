@@ -132,5 +132,6 @@ correctness, verification, and maintainability. The maintainer makes the final d
 change.
 
 By submitting a contribution, you confirm that you have the right to submit it and that it is
-licensed under the repository's [MIT License](LICENSE). Do not submit material you do not have the
-right to share, or data whose license does not allow redistribution.
+licensed under the license that covers the content it changes or adds, as listed in the
+[licensing map](LICENSING.md). Do not submit material you do not have the right to share, or data
+whose license does not allow redistribution.
