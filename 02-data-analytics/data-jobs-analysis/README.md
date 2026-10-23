@@ -1,5 +1,7 @@
 # Data Jobs Analysis
 
+Part of [02 — Data Analytics](../README.md).
+
 Applied data analytics using 2023 data-job postings, with Germany as the main working market.
 
 Exercises build the data-oriented Python patterns needed before touching a DataFrame. Notebooks
@@ -117,7 +119,7 @@ benchmarks.
 
 ## Project
 
-### Job Market Analysis
+### India Data Jobs Market Analysis
 
 A structured multi-notebook study of India's data-job market using the same dataset. Covers market
 structure, skill architecture, skill evolution, salary analysis, and a Pareto frontier analysis of

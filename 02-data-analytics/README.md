@@ -1,5 +1,7 @@
 # 02 — Data Analytics
 
+Part of [Python Foundry](../README.md).
+
 From DataFrame basics to evidence-aware analysis using real-world job-posting data.
 
 This module builds applied data analytics capability in a single coherent arc — exercises establish
