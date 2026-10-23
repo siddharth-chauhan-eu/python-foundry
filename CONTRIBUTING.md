@@ -41,7 +41,7 @@ the pull request template. The verification workflow must pass before a merge.
 
 Start the subject with a type, an optional scope in parentheses, and a colon. Then write a short
 description in the imperative mood, without a final period. Use a scope only for a clearly bounded
-area, as in `docs(decisions): correct decision 0001`.
+area, as in `docs(readme): update the setup steps`.
 
 | Type       | Use for                                     |
 | ---------- | ------------------------------------------- |

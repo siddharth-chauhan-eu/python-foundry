@@ -6,9 +6,9 @@
 
 <!-- State the goal of this change and why it is useful. -->
 
-## Related issue or decision (optional)
+## Related issue or decision
 
-<!-- Link the related issue or decision record, such as `decision 0002`. Remove this section if none applies. -->
+<!-- Link the relevant issue or ADR. Write "None" only when neither applies. -->
 
 ## Changes
 
@@ -20,9 +20,9 @@
 
 <!-- List checks run and their results. Disclose relevant checks that failed or were not run. -->
 
-## Impact and maintenance notes (optional)
+## Impact and maintenance notes
 
-<!-- Record details that matter beyond this change: dependency or lockfile effects, supported Python or platform versions, dataset sources/revisions and assumptions, notebook or generated outputs, third-party licensing and attribution, known limitations, or follow-up. Remove this section if not relevant. -->
+<!-- Record details that matter beyond this change: dependency or lockfile effects, supported Python or platform versions, dataset sources/revisions and assumptions, notebook or generated outputs, third-party licensing and attribution, known limitations, or follow-up. Write "None" only when none applies. -->
 
 ## Checklist
 
