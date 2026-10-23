@@ -29,7 +29,7 @@ Each file targets a specific concept or combination of concepts.
 | 10  | `10_duplicate_check.py`          | Functions · `set()` · duplicate detection                              |
 | 11  | `11_dict_filter_transform.py`    | Dict comprehensions · `isinstance()` · type filtering                  |
 
-## Skill Progression
+## Skill progression
 
 | Stage               | Exercises | Focus                                         |
 | ------------------- | --------- | --------------------------------------------- |

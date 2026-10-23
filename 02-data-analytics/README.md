@@ -8,7 +8,7 @@ This module builds applied data analytics capability in a single coherent arc â€
 Python patterns for structured data, notebooks develop library skills and apply them to Germany's
 data-job market, and a project extends the methodology into a structured study of India.
 
-## Learning Arc
+## Learning arc
 
 | Phase          | Location                                          | Focus                                                          |
 | -------------- | ------------------------------------------------- | -------------------------------------------------------------- |

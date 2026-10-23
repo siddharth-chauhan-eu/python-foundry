@@ -62,7 +62,7 @@ Given a CSV file, the tool:
 - counts missing values (absolute and percentage)
 - infers column types: `numeric` · `non-numeric` · `mixed` · `empty`
 
-## Parsing Strategy
+## Parsing strategy
 
 Two-stage approach:
 
@@ -78,7 +78,7 @@ rules.
 - Encoding is UTF-8 (BOM supported)
 - File fits in memory
 
-## Known Limitations
+## Known limitations
 
 | Case                            | Behavior              |
 | ------------------------------- | --------------------- |
@@ -87,7 +87,7 @@ rules.
 | Inconsistent row lengths        | Partial parsing       |
 | Corrupted CSV                   | Returns empty dataset |
 
-## Non-Goals
+## Non-goals
 
 This tool does not:
 
@@ -104,7 +104,7 @@ Validated against:
 - edge-case synthetic dataset (sample_data.csv)
 - real-world messy datasets (e.g., World Bank exports)
 
-## Design Principles
+## Design principles
 
 - Structure over assumptions
 - No hardcoded column names or dataset-specific rules
@@ -112,7 +112,7 @@ Validated against:
 - Fail safely — no crashes on malformed input
 - Standard library only
 
-## Project Structure
+## Project structure
 
 ```text
 dataset-summary/
