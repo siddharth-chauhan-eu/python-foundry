@@ -10,7 +10,12 @@ lists the original content of this repository.
 | [Code of conduct](CODE_OF_CONDUCT.md)                    | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 
 Content that the table does not list is under the MIT License. A notebook is one file. The MIT
-License covers the whole notebook.
+License covers the notebook, except the third-party material in its saved outputs.
+
+## Third-party material
+
+Third-party material keeps its own license. The [third-party notices](THIRD_PARTY_NOTICES.md) list
+it.
 
 ## Reuse
 
