@@ -36,9 +36,8 @@ notebook.
 
 ## Notebooks
 
-All notebooks use the
-[Luke Barousse Data Jobs dataset](https://huggingface.co/datasets/lukebarousse/data_jobs) and are
-scoped to Germany unless stated otherwise.
+All notebooks use the [Data Jobs dataset](#data-source) and are scoped to Germany unless stated
+otherwise.
 
 | #   | Notebook                            | Focus                                                            |
 | --- | ----------------------------------- | ---------------------------------------------------------------- |
