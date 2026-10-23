@@ -14,7 +14,7 @@ sources, dataset revisions, assumptions, and limitations in context.
 Start here for the finished projects.
 
 - [India Data Jobs Market Analysis](02-data-analytics/data-jobs-analysis/project/job-market-analysis/README.md):
-  a five-notebook study of India's data-job market. It covers market structure, skill demand, skill
+  a notebook study of India's data-job market. It covers market structure, skill demand, skill
   evolution, compensation evidence, and skill strategy for Data Analysts. The dataset revision is
   pinned.
 - [Dataset Summary](01-python-fundamentals/project/dataset-summary/README.md): a command-line tool
