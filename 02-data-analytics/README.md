@@ -39,4 +39,4 @@ uv sync --locked
 Use the repository's `.venv` as the notebook kernel. See the
 [root setup instructions](../README.md#supported-setup).
 
-See [`data-jobs-analysis/README.md`](data-jobs-analysis/README.md) for full documentation.
+See the [Data Jobs Analysis](data-jobs-analysis/README.md) for full documentation.

@@ -162,12 +162,12 @@ resulting changes.
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for how to report issues and propose changes.
+See the [contributing guide](CONTRIBUTING.md) for how to report issues and propose changes.
 
 ## Security
 
-Report suspected vulnerabilities privately, as described in [SECURITY.md](SECURITY.md). Do not open
-a public issue for a vulnerability.
+Report suspected vulnerabilities privately, as described in the [security policy](SECURITY.md). Do
+not open a public issue for a vulnerability.
 
 ## Licensing
 

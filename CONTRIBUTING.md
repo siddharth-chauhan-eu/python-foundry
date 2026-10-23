@@ -9,7 +9,8 @@ Participation is governed by the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 1. Search existing issues first.
 2. Use an issue form and give enough detail to reproduce the problem.
-3. For a security vulnerability, **do not open a public issue**. Follow [SECURITY.md](SECURITY.md).
+3. For a security vulnerability, **do not open a public issue**. Follow the
+   [security policy](SECURITY.md).
 
 ## Before opening a pull request
 

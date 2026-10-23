@@ -46,7 +46,7 @@ A command-line tool that analyzes CSV files and outputs a human-readable text su
 structured JSON report. Handles standard and wide/messy formats with no dependencies beyond the
 standard library.
 
-See [`project/dataset-summary/README.md`](project/dataset-summary/README.md) for full documentation.
+See the [Dataset Summary](project/dataset-summary/README.md) for full documentation.
 
 ```bash
 python dataset_summary.py sample_data.csv
