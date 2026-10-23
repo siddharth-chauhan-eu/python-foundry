@@ -9,6 +9,18 @@ Online courses, technical documentation, and public datasets provide references 
 relevant. Each project applies them to a concrete problem and documents its methods, extensions,
 sources, dataset revisions, assumptions, and limitations in context.
 
+## Highlights
+
+Start here for the finished projects.
+
+- [India Data Jobs Market Analysis](02-data-analytics/data-jobs-analysis/project/job-market-analysis/README.md):
+  a five-notebook study of India's data-job market. It covers market structure, skill demand, skill
+  evolution, compensation evidence, and skill strategy for Data Analysts. The dataset revision is
+  pinned.
+- [Dataset Summary](01-python-fundamentals/project/dataset-summary/README.md): a command-line tool
+  that inspects the structure of a CSV file and writes a text summary and a JSON report. It uses
+  only the Python standard library and has tests.
+
 ## Contents
 
 - [01 — Python Fundamentals](01-python-fundamentals/README.md): core language exercises and a CSV
