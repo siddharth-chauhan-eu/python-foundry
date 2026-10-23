@@ -2,14 +2,14 @@
 
 Part of [Data Jobs Analysis](../../README.md).
 
-## Executive Summary
+## Executive summary
 
 This project investigates the structure of India's data-jobs market using 51,088 job postings from
 the 2023 Data Jobs dataset. The analysis addresses five connected questions — market structure,
 skill demand, skill evolution, compensation evidence, and Data Analyst skill strategy — across five
 notebooks with a pinned dataset revision.
 
-### Market Structure
+### Market structure
 
 India contributes 6.5% of global postings. Data Engineer, Data Scientist, and Data Analyst roles
 account for **75.3%** of India postings.
@@ -26,7 +26,7 @@ The ten most active employers contribute only **5.8%** of postings (Employer HHI
 that demand is highly fragmented across the employer base. The results show geographic concentration
 in visible postings without comparable concentration among employers.
 
-### Skill Architecture
+### Skill architecture
 
 SQL and Python form the shared technical foundation across the three largest role families.
 Role-specific stacks diverge clearly beyond this core.
@@ -43,7 +43,7 @@ Python and SQL appear together in **41.1%** of India data-job postings.
 
 ![Most in-demand skill bundles — pair prevalence across India data jobs](figures/02_skill_bundles.png)
 
-### Skill Evolution
+### Skill evolution
 
 The established skill mix remained broadly stable during 2023. Among skills reaching at least 3%
 prevalence in either half, PyTorch recorded the largest positive movement at **+1.5 percentage
@@ -56,7 +56,7 @@ hierarchy. Core technologies maintained their relative positions throughout the 
 
 ![Highest monthly volatility among established skills](figures/03_monthly_volatility.png)
 
-### Compensation Evidence
+### Compensation evidence
 
 Only **582 India postings (1.1%)** disclose annual salary. No role has enough coverage to support
 market-representative salary benchmarks.
@@ -73,7 +73,7 @@ presented with sample sizes and interquartile ranges.
 
 ![Directional role salary comparison — median and IQR](figures/04_role_salary_comparison.png)
 
-### Data Analyst Skill Strategy
+### Data Analyst skill strategy
 
 For Data Analyst roles specifically, SQL offers the broadest market reach and the strongest salary
 evidence base. Power BI and Tableau occupy higher pay-signal positions on the Pareto frontier with
@@ -91,7 +91,7 @@ alongside the salary record count.
 
 ![Salary evidence quality and pay signal by Data Analyst skill](figures/05_analyst_salary_evidence.png)
 
-## Analytical Objective
+## Analytical objective
 
 The analysis answers five connected questions:
 
@@ -116,7 +116,7 @@ counts alone.
 | [04 Salary Analysis](04_salary_analysis.ipynb) | Assess salary missingness, selection bias, and defensible role comparisons.                                    |
 | [05 Market Insights](05_market_insights.ipynb) | Evaluate Data Analyst skill trade-offs using a Pareto frontier across reach, pay signal, and evidence quality. |
 
-## Metric Design
+## Metric design
 
 | Metric                 | Definition                                                                                    |
 | ---------------------- | --------------------------------------------------------------------------------------------- |
@@ -128,7 +128,7 @@ counts alone.
 | Employer HHI           | Sum of squared employer posting shares × 10,000                                               |
 | Pareto frontier        | Skills not dominated by another eligible skill on both prevalence and median disclosed salary |
 
-## Data and Limitations
+## Data and limitations
 
 The dataset contains job postings from calendar year 2023. The
 [data source](../../README.md#data-source) section of the Data Jobs Analysis README lists the
