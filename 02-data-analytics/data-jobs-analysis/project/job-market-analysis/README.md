@@ -32,7 +32,7 @@ Role-specific stacks diverge clearly beyond this core.
 ![Skill architecture heatmap — posting prevalence across core role families](figures/02_skill_architecture_heatmap.png)
 
 The skills with the largest prevalence spread across roles provide the clearest signal of role
-specialisation.
+specialization.
 
 ![Role differentiators — prevalence spread by skill and leading role](figures/02_role_differentiators.png)
 
@@ -140,8 +140,8 @@ the analytical input is stable across reruns. Important limitations:
 - Posting volume is not equivalent to hires or unique vacancies.
 - Duplicate or syndicated listings may inflate demand.
 - Skill mentions do not measure proficiency requirements.
-- Employer and location labels are not fully standardised.
+- Employer and location labels are not fully standardized.
 - Salary is missing for **98.9%** of India postings and may be missing systematically.
-- Salary values are standardised annual USD figures and may not reflect local compensation
+- Salary values are standardized annual USD figures and may not reflect local compensation
   structures precisely.
 - The analysis does not establish current market conditions or causal salary premiums.
