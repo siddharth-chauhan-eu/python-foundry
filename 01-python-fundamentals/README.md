@@ -1,5 +1,7 @@
 # 01 — Python Fundamentals
 
+Part of [Python Foundry](../README.md).
+
 Core language concepts covered through progressive exercises and a CLI project.
 
 ## Contents

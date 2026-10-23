@@ -1,5 +1,7 @@
 # Dataset Summary
 
+Part of [01 — Python Fundamentals](../../README.md).
+
 Structural inspection for CSV files — no dependencies, no data-specific assumptions.
 
 A command-line tool that analyzes CSV datasets and generates a human-readable text summary and a

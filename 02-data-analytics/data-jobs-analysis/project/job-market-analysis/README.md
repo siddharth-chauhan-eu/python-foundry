@@ -1,5 +1,7 @@
 # India Data Jobs Market Analysis
 
+Part of [Data Jobs Analysis](../../README.md).
+
 ## Executive Summary
 
 This project investigates the structure of India's data-jobs market using 51,088 job postings from
