@@ -166,12 +166,12 @@ data-jobs-analysis/
 [Luke Barousse Data Jobs dataset](https://huggingface.co/datasets/lukebarousse/data_jobs) — job
 postings from calendar year 2023.
 
-- Upstream license: Apache-2.0
+- License: see the [third-party notices](../../THIRD_PARTY_NOTICES.md)
 - Dataset revision: `1d815e9ce232eb27db11939c44eb048fe6d2e9ab`
 - `data_jobs.csv` SHA-256: `635241ed09ccee18bdae1f83b45f26d6759e0aa2513c529f6190e9054062436c`
 
 The notebooks pin the Hugging Face dataset revision so the analytical input does not silently change
-when upstream `main` changes. The dataset itself is not redistributed in this repository.
+when upstream `main` changes. The notebooks load the dataset at run time.
 
 ## Environment setup
 

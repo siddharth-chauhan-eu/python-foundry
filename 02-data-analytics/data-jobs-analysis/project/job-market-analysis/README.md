@@ -130,7 +130,7 @@ counts alone.
 
 - **Source:**
   [Luke Barousse Data Jobs dataset](https://huggingface.co/datasets/lukebarousse/data_jobs)
-- **Upstream license:** Apache-2.0
+- **License:** see the [third-party notices](../../../../THIRD_PARTY_NOTICES.md)
 - **Dataset revision:** `1d815e9ce232eb27db11939c44eb048fe6d2e9ab`
 - **`data_jobs.csv` SHA-256:** `635241ed09ccee18bdae1f83b45f26d6759e0aa2513c529f6190e9054062436c`
 

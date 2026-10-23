@@ -26,7 +26,7 @@ Start here for the finished projects.
 - [01 — Python Fundamentals](01-python-fundamentals/README.md): core language exercises and a CSV
   inspection command-line tool.
 - [02 — Data Analytics](02-data-analytics/README.md): data preparation, analysis, and visualization
-  applied to public job-posting data. The dataset is not redistributed in this repository.
+  applied to public job-posting data.
 
 ## Environment and dependencies
 
@@ -172,7 +172,8 @@ a public issue for a vulnerability.
 ## Licensing
 
 This repository uses more than one license. The [licensing map](LICENSING.md) lists the license for
-each type of content.
+each type of content. The [third-party notices](THIRD_PARTY_NOTICES.md) list material from third
+parties.
 
 [uv installation guide]: https://docs.astral.sh/uv/getting-started/installation/
 [uv project documentation]: https://docs.astral.sh/uv/guides/projects/
