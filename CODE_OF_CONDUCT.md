@@ -142,7 +142,7 @@ Contributor Covenant is stewarded by the Organization for Ethical Source and lic
 
 Changes from the original text: references to the organization are replaced with references to the
 maintainer, the reporting address is set, and the scope names this repository. This file is licensed
-under CC BY-SA 4.0, not under the MIT License of the rest of the repository.
+under CC BY-SA 4.0, not under the other licenses of this repository.
 
 For answers to common questions about Contributor Covenant, see the FAQ at
 [https://www.contributor-covenant.org/faq](https://www.contributor-covenant.org/faq). Translations
