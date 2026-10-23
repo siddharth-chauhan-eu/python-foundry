@@ -123,7 +123,7 @@ A structured multi-notebook study of India's data-job market using the same data
 structure, skill architecture, skill evolution, salary analysis, and a Pareto frontier analysis of
 Data Analyst skill strategy.
 
-See [`project/job-market-analysis/README.md`](project/job-market-analysis/README.md) for full
+See the [India Data Jobs Market Analysis](project/job-market-analysis/README.md) for full
 documentation.
 
 ## Structure
