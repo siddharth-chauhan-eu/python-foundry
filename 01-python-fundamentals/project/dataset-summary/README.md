@@ -43,13 +43,37 @@ Two files are written to the same directory as the input:
 
 ```json
 {
-  "file": "sample_data.csv",
-  "total_rows": 10,
-  "total_columns": 5,
-  "columns": ["country", "year", "gdp", "inflation", "notes"],
-  "missing": {},
-  "missing_percentage": {},
-  "column_types": {}
+    "column_types": {
+        "country": "non-numeric",
+        "gdp": "numeric",
+        "inflation": "mixed",
+        "notes": "non-numeric",
+        "year": "mixed"
+    },
+    "columns": [
+        "country",
+        "year",
+        "gdp",
+        "inflation",
+        "notes"
+    ],
+    "file": "sample_data.csv",
+    "missing": {
+        "country": 1,
+        "gdp": 1,
+        "inflation": 2,
+        "notes": 1,
+        "year": 0
+    },
+    "missing_percentage": {
+        "country": 10.0,
+        "gdp": 10.0,
+        "inflation": 20.0,
+        "notes": 10.0,
+        "year": 0.0
+    },
+    "total_columns": 5,
+    "total_rows": 10
 }
 ```
 
@@ -80,12 +104,14 @@ rules.
 
 ## Known limitations
 
-| Case                            | Behavior              |
-| ------------------------------- | --------------------- |
-| Non-comma delimiter (e.g., `;`) | Incorrect parsing     |
-| Very large files                | High memory usage     |
-| Inconsistent row lengths        | Partial parsing       |
-| Corrupted CSV                   | Returns empty dataset |
+| Case                                 | Behavior                     |
+| ------------------------------------ | ---------------------------- |
+| Non-comma delimiter (e.g., `;`)      | Incorrect parsing            |
+| Very large files                     | High memory usage            |
+| Inconsistent row lengths             | Partial parsing              |
+| Corrupted CSV                        | Returns empty dataset        |
+| `nan`, `inf`, or `1_000` in a column | Counted as numeric           |
+| Usage, file, or parse error          | Message printed, exit code 0 |
 
 ## Non-goals
 

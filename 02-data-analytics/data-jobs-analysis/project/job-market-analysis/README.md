@@ -97,7 +97,7 @@ The analysis answers five connected questions:
 
 1. How is advertised data-job demand structured across roles, locations, and employers?
 2. Which skills provide broad market access, and which distinguish specific role families?
-3. Did Data Analyst skill demand materially change during 2023?
+3. Did skill demand across India postings materially change during 2023?
 4. What compensation comparisons are defensible given the available salary evidence?
 5. Which Data Analyst skills offer the strongest trade-offs between market reach, pay signal, and
    evidence quality?
@@ -111,7 +111,7 @@ counts alone.
 | Notebook                                       | Analytical Purpose                                                                                             |
 | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | [01 Market Overview](01_market_overview.ipynb) | Establish market structure, concentration, and evidence quality.                                               |
-| [02 Skill Demand](02_skill_demand.ipynb)       | Separate shared foundations from role-defining skills and analyst skill bundles.                               |
+| [02 Skill Demand](02_skill_demand.ipynb)       | Separate shared foundations from role-defining skills and skill bundles.                                       |
 | [03 Skill Evolution](03_skill_evolution.ipynb) | Distinguish sustained skill movement from monthly posting noise.                                               |
 | [04 Salary Analysis](04_salary_analysis.ipynb) | Assess salary missingness, selection bias, and defensible role comparisons.                                    |
 | [05 Market Insights](05_market_insights.ipynb) | Evaluate Data Analyst skill trade-offs using a Pareto frontier across reach, pay signal, and evidence quality. |
