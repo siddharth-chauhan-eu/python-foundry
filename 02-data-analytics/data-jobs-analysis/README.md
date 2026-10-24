@@ -162,7 +162,7 @@ data-jobs-analysis/
         └── README.md
 ```
 
-## Data Source
+## Data source
 
 [Luke Barousse Data Jobs dataset](https://huggingface.co/datasets/lukebarousse/data_jobs) — job
 postings from calendar year 2023.
