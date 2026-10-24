@@ -26,13 +26,12 @@ study of the Indian market.
 
 **01 — Job Role Matcher.** Matches a current skill set against predefined role requirements. Each
 role specifies required skills as a list; the script uses `all()` with a generator to test subset
-membership in a single readable expression — the same pattern used in every filtering step
-downstream.
+membership in a single readable expression.
 
 **02 — Job Data Cleanup.** Converts string-encoded job records into typed Python objects. Skill
 strings are parsed with `ast.literal_eval()` and date strings are converted with
-`datetime.strptime()`. This is exactly the parsing logic that appears at the top of every subsequent
-notebook.
+`datetime.strptime()`. Notebooks that use the skills column convert it with `ast.literal_eval()`.
+All notebooks convert the posting dates with `pandas.to_datetime()`.
 
 ## Notebooks
 
@@ -108,7 +107,7 @@ benchmarks.
   appears in very few postings
 - The highest-paying skills are not the most frequently requested, revealing a clear reach vs. pay
   trade-off
-- Python, SQL, cloud platforms, and orchestration tools score well across both dimensions
+- The ten most requested skills have median disclosed salaries between 98K and 147K USD
 
 ![Top 10 highest paying skills — Data Engineer (Germany, 2023)](notebooks/figures/median_salary_by_data_engineering_skill_germany_top_10.png)
 
