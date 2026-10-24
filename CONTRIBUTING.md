@@ -59,7 +59,7 @@ that says what changed and why.
 
 ## Documentation
 
-- Write in plain English with short sentences.
+- Write in clear, plain English.
 - Keep Markdown within the formatting and lint rules that `scripts/verify.py` checks.
 - Name the source of any data, code, or idea that you use. Pin the revision of an external dataset.
   Record assumptions and limitations next to the result.
@@ -69,8 +69,8 @@ that says what changed and why.
 ## Decision records
 
 A decision record, also called an architecture decision record (ADR), records a durable decision
-about this repository. It is not a meeting note and it does not hold private deliberation. A reader
-who has the repository and its public references must understand it without other context.
+about this repository. A record must be understandable from the repository and its public references
+alone.
 
 Add a record when a decision is hard to reverse or when a reader may question it. Routine edits,
 link fixes, and ordinary maintenance do not need a record.
