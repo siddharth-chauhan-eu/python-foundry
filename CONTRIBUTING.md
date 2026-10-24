@@ -60,6 +60,8 @@ that says what changed and why.
 ## Documentation
 
 - Write in clear, plain English.
+- Use sentence case for headings below the title. Names, document titles, acronyms, and adapted text
+  keep their original capitals.
 - Keep Markdown within the formatting and lint rules that `scripts/verify.py` checks.
 - Name the source of any data, code, or idea that you use. Pin the revision of an external dataset.
   Record assumptions and limitations next to the result.
