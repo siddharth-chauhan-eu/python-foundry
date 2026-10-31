@@ -31,7 +31,7 @@ dev = [
 package = false
 
 [tool.ruff]
-# Ruff 0.17.1 default rule set; the target Python version comes from requires-python.
+# Ruff default rule set; the target Python version comes from requires-python.
 line-length = 88
 
 [tool.pytest.ini_options]
