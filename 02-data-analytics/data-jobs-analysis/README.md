@@ -173,6 +173,12 @@ postings from calendar year 2023.
 The notebooks pin the Hugging Face dataset revision so the analytical input does not silently change
 when upstream `main` changes. The notebooks load the dataset at run time.
 
+## Course source
+
+The exercises, notebooks, and project are informed by the course
+[Python for Data Analytics - Full Course for Beginners](https://www.youtube.com/watch?v=wUSDVGivd-8)
+by [Luke Barousse](https://www.youtube.com/@LukeBarousse) on YouTube.
+
 ## Environment setup
 
 Run the setup command from the repository root:
