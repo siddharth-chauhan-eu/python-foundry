@@ -4,6 +4,7 @@ type: software
 title: "Python Foundry"
 version: "0.1.0"
 date-released: "2026-10-31"
+doi: "10.5281/zenodo.23829394"
 authors:
   - family-names: "Chauhan"
     given-names: "Siddharth"
