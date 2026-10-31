@@ -8,8 +8,8 @@ Two tool sets checked the repository. Python tools were pinned in `uv.lock`. Nod
 Markdown and had their own lock file, package manager, and CI job. A custom syntax check in
 `scripts/verify.py` repeated the syntax errors that Ruff lint reports.
 
-Ruff replaced the custom syntax check on 2026-10-19. PyMarkdown and mdformat replaced the Node tools
-on 2026-10-20.
+Ruff replaced the custom syntax check on 2026-10-21. PyMarkdown and mdformat replaced the Node tools
+on 2026-10-21.
 
 ## Decision
 
