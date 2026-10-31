@@ -13,7 +13,7 @@ number of CI jobs. For two Python versions on three operating systems, it gives 
 CI runs `scripts/verify.py` on the lowest supported Python version on each supported operating
 system, and on the newest supported Python version on Linux.
 
-Since 2026-10-20 this has been four jobs: Python 3.11 on Linux, macOS, and Windows, and Python 3.14
+Since 2026-10-21 this has been four jobs: Python 3.11 on Linux, macOS, and Windows, and Python 3.14
 on Linux. `.github/workflows/verification.yml` defines the current jobs.
 
 The lowest version on each operating system exposes failures specific to an operating system. The
