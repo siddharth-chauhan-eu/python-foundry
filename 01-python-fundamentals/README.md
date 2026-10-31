@@ -77,6 +77,12 @@ python dataset_summary.py sample_data.csv
         └── README.md
 ```
 
+## Course source
+
+The exercises are informed by the course
+[Python Full Course for Beginners (13 Hours) - From Zero to Hero](https://www.youtube.com/watch?v=Rq5gJVxz55Q)
+by [Data with Baraa](https://www.youtube.com/@DataWithBaraa) on YouTube.
+
 ## Requirements
 
 - Python standard library only. The [project configuration](../pyproject.toml) sets the supported
