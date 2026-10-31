@@ -1,6 +1,7 @@
 # Python Foundry
 
 [![Verification](https://github.com/siddharth-chauhan-eu/python-foundry/actions/workflows/verification.yml/badge.svg)](https://github.com/siddharth-chauhan-eu/python-foundry/actions/workflows/verification.yml)
+[![DOI](https://zenodo.org/badge/1189535279.svg)](https://doi.org/10.5281/zenodo.23829394)
 
 Python projects built to be reproducible and traceable. Each project locks its environment and
 documents its sources, assumptions, and limitations.
