@@ -36,6 +36,6 @@ body:
     attributes:
       label: Environment
       description: Operating system, Python version, and uv version.
-      placeholder: Ubuntu 24.04, Python 3.11, uv 0.12.23
+      placeholder: Ubuntu 24.04, Python 3.11, and the output of uv --version
     validations:
       required: true
