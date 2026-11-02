@@ -57,6 +57,9 @@ area, as in `docs(readme): update the setup steps`.
 Keep each commit to one logical change. When the subject is not enough, add a body as a bullet list
 that says what changed and why.
 
+End each commit message with a `Signed-off-by` line. See
+[Developer Certificate of Origin](#developer-certificate-of-origin).
+
 ## Documentation
 
 - Write in clear, plain English.
@@ -138,3 +141,43 @@ By submitting a contribution, you confirm that you have the right to submit it a
 licensed under the license that covers the content it changes or adds, as listed in the
 [licensing map](LICENSING.md). Do not submit material you do not have the right to share, or data
 whose license does not allow redistribution.
+
+You keep the copyright in your contribution. Accepting a contribution does not transfer ownership.
+It gives the maintainer no right beyond the license that covers the contribution.
+
+Material from another source keeps its own license. Name the source and its license in the pull
+request. When the material is in the repository, it also needs an entry in the
+[third-party notices](THIRD_PARTY_NOTICES.md). The maintainer reviews the license and the credit
+before a merge. A sign-off does not replace this review.
+
+### Developer Certificate of Origin
+
+This repository uses the [Developer Certificate of Origin](DCO) (DCO), version 1.1. It is a short
+statement that you have the right to submit your work. It is not a copyright assignment and not a
+contributor license agreement.
+
+Add a sign-off line to the end of each commit message:
+
+```text
+Signed-off-by: Your Name <your-email@example.com>
+```
+
+Git adds this line when you commit with `git commit -s`. Use the name and email address from your
+Git configuration. The sign-off means that you agree to the DCO for that commit. A sign-off is not a
+cryptographic signature. It is a line of text in the message.
+
+Every commit needs a sign-off, including the commits of the maintainer. The rule applies to commits
+made after the DCO was adopted. Earlier commits are not changed.
+
+To add a missing sign-off to the last commit, run `git commit --amend --signoff --no-edit`. To add
+it to every commit of your branch, update your local `main` and run `git rebase --signoff main` from
+your branch. Then run `git push --force-with-lease`.
+
+The maintainer checks the sign-off of each commit by hand before a merge. A pull request with a
+missing sign-off waits until you fix it. The maintainer keeps the sign-off lines in the squash
+commit message.
+
+The DCO states that your contribution and your sign-off are public. The project keeps this record
+indefinitely and may redistribute it. Your name and email address stay in the Git history. To keep
+your personal email address private, use the noreply email address that GitHub gives you. You can
+find it in your GitHub email settings.
