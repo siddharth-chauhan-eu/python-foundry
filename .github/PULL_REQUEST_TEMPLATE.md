@@ -33,3 +33,4 @@
 - [ ] I updated documentation where behavior, setup, or commands changed.
 - [ ] Relevant compatibility, dependency, data provenance, licensing, and attribution implications
   are documented where applicable.
+- [ ] Every commit has a `Signed-off-by` line, as the contributing guidelines require.
