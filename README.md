@@ -161,7 +161,7 @@ resulting changes.
 
 ## Contributing
 
-See the [contributing guide](CONTRIBUTING.md) for how to report issues and propose changes.
+See the [contributing guidelines](CONTRIBUTING.md) for how to report issues and propose changes.
 
 ## Security
 
