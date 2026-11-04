@@ -64,8 +64,7 @@ Not every conflict represents a code of conduct violation, and this Code of Cond
 encouraged behaviors and norms that can help avoid conflicts and minimize harm.
 
 When an incident does occur, it is important to report it promptly. Possible violations should be
-reported privately to
-[siddharth.chauhan@macro-evidence.com](mailto:siddharth.chauhan@macro-evidence.com). Do not submit
+reported privately to [siddharthchauhan@duck.com](mailto:siddharthchauhan@duck.com). Do not submit
 sensitive conduct reports through public issues, discussions, or pull requests.
 
 Include enough information to understand what occurred, such as relevant dates, links, messages,

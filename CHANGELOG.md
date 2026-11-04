@@ -11,6 +11,10 @@ This file records the notable changes in each release of the repository. The for
 - Developer Certificate of Origin sign-off for commits (decision 0006).
 - Rules for changelog entries in the contributing guidelines.
 
+### Changed
+
+- The code of conduct lists a personal address for conduct reports.
+
 ## [0.1.0] - 2026-10-31
 
 ### Added
