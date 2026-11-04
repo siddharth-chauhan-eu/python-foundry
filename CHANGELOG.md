@@ -1,9 +1,15 @@
 # Changelog
 
 This file records the notable changes in each release of the repository. The format follows
-[Keep a Changelog](https://keepachangelog.com/).
+[Keep a Changelog](https://keepachangelog.com/). The rules for entries are in the
+[Changelog](CONTRIBUTING.md#changelog) section of the contributing guidelines.
 
 ## [Unreleased]
+
+### Added
+
+- Developer Certificate of Origin sign-off for commits (decision 0006).
+- Rules for changelog entries in the contributing guidelines.
 
 ## [0.1.0] - 2026-10-31
 

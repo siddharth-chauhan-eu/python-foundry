@@ -41,3 +41,7 @@ pythonpath = ["tests"]
 [tool.pymarkdown.plugins.md013]
 # Line length is handled by mdformat (wrap = 100 in .mdformat.toml).
 enabled = false
+
+[tool.pymarkdown.plugins.md024]
+# The changelog repeats group headings under each version.
+siblings_only = true

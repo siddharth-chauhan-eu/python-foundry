@@ -22,7 +22,8 @@ A pull request should:
 - address one coherent change;
 - explain the problem and the chosen approach;
 - include tests or other verification appropriate to the change;
-- update documentation when behavior, setup, or commands change; and
+- update documentation when behavior, setup, or commands change;
+- add a changelog entry when the change is notable (see [Changelog](#changelog)); and
 - avoid unrelated refactors and formatting changes.
 
 Run the full local verification before you open the pull request, and report the result in the pull
@@ -59,6 +60,22 @@ that says what changed and why.
 
 End each commit message with a `Signed-off-by` line. See
 [Developer Certificate of Origin](#developer-certificate-of-origin).
+
+## Changelog
+
+`CHANGELOG.md` records the notable changes of each release in the
+[Keep a Changelog](https://keepachangelog.com/) format.
+
+Add an entry under `## [Unreleased]` in the same pull request when a change is notable. Place it in
+one of the groups `Added`, `Changed`, `Deprecated`, `Removed`, `Fixed`, or `Security`, and describe
+the change in one short line.
+
+Notable changes include new or changed content, projects, or commands; corrections to results;
+changes to licenses, policies, or community files; and security fixes. Routine dependency updates,
+workflow changes, and internal maintenance need no entry.
+
+The maintainer may edit or add an entry before a merge. At a release, the maintainer moves the
+`Unreleased` entries under the new version and its date.
 
 ## Documentation
 
