@@ -63,8 +63,7 @@ End each commit message with a `Signed-off-by` line. See
 
 ## Changelog
 
-`CHANGELOG.md` records the notable changes of each release in the
-[Keep a Changelog](https://keepachangelog.com/) format.
+`CHANGELOG.md` records the notable changes of each release.
 
 Add an entry under `## [Unreleased]` in the same pull request when a change is notable. Place it in
 one of the groups `Added`, `Changed`, `Deprecated`, `Removed`, `Fixed`, or `Security`, and describe
