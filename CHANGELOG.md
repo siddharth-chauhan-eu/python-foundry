@@ -8,12 +8,19 @@ This file records the notable changes in each release of the repository. The for
 
 ### Added
 
+- Zenodo DOI badge in the README and the concept DOI in the citation metadata.
+- Source sections that name the courses behind the Python Fundamentals and Data Jobs Analysis
+  content.
 - Developer Certificate of Origin sign-off for commits (decision 0006).
 - Rules for changelog entries in the contributing guidelines.
 
 ### Changed
 
 - The code of conduct lists a personal address for conduct reports.
+
+### Fixed
+
+- Effective dates in decisions 0002 and 0003.
 
 ## [0.1.0] - 2026-10-31
 
