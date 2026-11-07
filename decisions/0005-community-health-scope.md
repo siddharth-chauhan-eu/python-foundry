@@ -4,9 +4,9 @@
 
 ## Context
 
-The repository is a personal project with one maintainer. It has no releases and no deployed
-service. Issues and pull requests can still arrive from outside, so the repository defines how to
-report a problem, report a vulnerability, and contribute.
+At acceptance, the repository was a personal project with one maintainer. It had no releases and no
+deployed service. Issues and pull requests can still arrive from outside, so the repository defines
+how to report a problem, report a vulnerability, and contribute.
 
 ## Decision
 

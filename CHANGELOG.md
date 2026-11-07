@@ -23,6 +23,7 @@ This file records the notable changes in each release of the repository. The for
 ### Fixed
 
 - Effective dates in decisions 0002 and 0003.
+- A time reference in the context of decision 0005.
 
 ## [0.1.0] - 2026-10-31
 
