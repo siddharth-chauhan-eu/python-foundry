@@ -2,16 +2,16 @@
 
 ## Scope
 
-This repository holds personal Python projects. It has no releases and no deployed service.
-Vulnerability reports are accepted for the current `main` branch and for the dependencies pinned in
-`uv.lock`.
+This repository holds personal Python projects. Vulnerability reports are accepted for the default
+branch, the latest release, and the dependencies pinned in `uv.lock`.
 
 ## Reporting a vulnerability
 
-**Do not disclose a suspected vulnerability in a public issue, discussion, or pull request.**
+**Do not disclose a suspected vulnerability in a public issue or pull request.**
 
 Use GitHub private vulnerability reporting: open the repository's **Security** tab and select
-**Report a vulnerability**. Include, where applicable:
+**Report a vulnerability**. If GitHub private vulnerability reporting is unavailable, send the
+report to [siddharthchauhan@duck.com](mailto:siddharthchauhan@duck.com). Include, where applicable:
 
 - the affected file, dependency, or command;
 - the affected commit or version, if known;
@@ -26,5 +26,6 @@ Do not send credentials, private keys, access tokens, or other live secrets.
 Reports are reviewed on a best-effort basis. There is no guaranteed acknowledgement or remediation
 time.
 
-Please allow a reasonable period for investigation and remediation before public disclosure. The
-maintainer may credit the reporter in the fix or advisory unless the reporter asks for anonymity.
+Do not disclose a vulnerability publicly before the maintainer confirms a fix or agrees a disclosure
+date with the reporter. The maintainer may credit the reporter in the fix or advisory unless the
+reporter asks for anonymity.
