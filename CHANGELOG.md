@@ -17,8 +17,8 @@ This file records the notable changes in each release of the repository. The for
 ### Changed
 
 - The code of conduct lists a personal address for conduct reports.
-- The security policy covers the default branch and the latest release, sets a disclosure condition,
-  and lists an email address as a fallback for reports.
+- The security policy scopes dependency reports, sets a default 90-day disclosure period, makes
+  credit consent-based, and lists an email address as a fallback for reports.
 
 ### Fixed
 
