@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this repository, please cite it as below."
+message: "If you use this repository, please cite it."
 type: software
 title: "Python Foundry"
 version: "0.1.0"
@@ -10,3 +10,11 @@ authors:
     given-names: "Siddharth"
     orcid: "https://orcid.org/0009-0008-5304-9875"
 repository-code: "https://github.com/siddharth-chauhan-eu/python-foundry"
+keywords:
+  - "data-analysis"
+  - "data-visualization"
+  - "jupyter-notebook"
+  - "pandas"
+  - "python"
+  - "reproducible-research"
+  - "uv"
