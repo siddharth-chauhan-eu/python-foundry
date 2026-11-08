@@ -13,6 +13,7 @@ This file records the notable changes in each release of the repository. The for
   content.
 - Developer Certificate of Origin sign-off for commits (decision 0006).
 - Rules for changelog entries in the contributing guidelines.
+- A section on contributions other than code in the contributing guidelines.
 
 ### Changed
 

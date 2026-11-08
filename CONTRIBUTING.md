@@ -5,6 +5,15 @@ reviewed as capacity allows, and no response time is promised.
 
 Participation is governed by the [Code of Conduct](CODE_OF_CONDUCT.md).
 
+## Ways to contribute
+
+Problems are reported in issues, and changes arrive as pull requests. These contributions are also
+welcome:
+
+- Star the repository.
+- Share it with people who may find it useful.
+- Give feedback on the content, such as an unclear explanation or an error in an exercise.
+
 ## Before opening an issue
 
 1. Search existing issues first.
