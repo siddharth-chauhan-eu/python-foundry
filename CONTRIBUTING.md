@@ -45,8 +45,9 @@ uv run --locked python scripts/verify.py
 The [README](README.md) describes the setup and each individual check.
 
 Changes reach `main` through pull requests, and each pull request is squash merged. The pull request
-title becomes the commit subject, so write it in the commit format below. Write the description in
-the pull request template. The verification workflow must pass before a merge.
+title or the subject of its commit becomes the commit subject, so write both in the commit format
+below. Write the description in the pull request template. The verification workflow must pass
+before a merge.
 
 ## Commit messages
 
