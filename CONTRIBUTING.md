@@ -67,7 +67,8 @@ End each commit message with a `Signed-off-by` line. See
 
 Add an entry under `## [Unreleased]` in the same pull request when a change is notable. Place it in
 one of the groups `Added`, `Changed`, `Deprecated`, `Removed`, `Fixed`, or `Security`, and describe
-the change in one short line.
+the change in one short line. Add the entry at the end of its group. When a later change updates an
+existing entry, edit that entry in place.
 
 Notable changes include new or changed content, projects, or commands; corrections to results;
 changes to licenses, policies, or community files; and security fixes. Routine dependency updates,
@@ -93,8 +94,12 @@ A decision record, also called an architecture decision record (ADR), records a 
 about this repository. A record must be understandable from the repository and its public references
 alone.
 
-Add a record when a decision is hard to reverse or when a reader may question it. Routine edits,
-link fixes, and ordinary maintenance do not need a record.
+Add a record for a decision that sets the structure, tooling, dependencies, licensing, or process of
+this repository and constrains later work. Routine edits, link fixes, and ordinary maintenance do
+not need a record.
+
+Add the record in the pull request that makes the change. A record may come earlier with the status
+`Proposed`. A record written after the change says so in its Context.
 
 - Records live in `decisions/`. One file records one decision, and its name is
   `NNNN-short-title.md`.
@@ -142,6 +147,8 @@ What is decided, and the boundary of that decision.
 
 Benefits, costs, trade-offs, risks, and follow-up work.
 ```
+
+State the Context as of the decision date.
 
 Use `## Decision` for one decision. Use `## Decisions` only when several choices must stand or fall
 together. Choices that can change separately get separate records. Make the material alternatives

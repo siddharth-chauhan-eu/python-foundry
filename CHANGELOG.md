@@ -17,9 +17,10 @@ This file records the notable changes in each release of the repository. The for
 ### Changed
 
 - The code of conduct lists a personal address for conduct reports.
-- The citation metadata lists keywords and a shorter citation message.
 - The security policy scopes dependency reports, sets a default 90-day disclosure period, makes
   credit consent-based, and lists an email address as a fallback for reports.
+- The citation metadata lists keywords and a shorter citation message.
+- The decision record guidelines define which decisions need a record and when to write it.
 
 ### Fixed
 

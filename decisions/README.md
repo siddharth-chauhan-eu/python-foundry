@@ -2,7 +2,9 @@
 
 This directory contains the decision records for this repository. The standard for these records is
 in the [Decision records](../CONTRIBUTING.md#decision-records) section of the contributing
-guidelines.
+guidelines. The record format adapts the structure described in
+[Documenting Architecture Decisions](https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions)
+by Michael Nygard.
 
 ## Decisions
 
