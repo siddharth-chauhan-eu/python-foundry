@@ -27,6 +27,7 @@ This file records the notable changes in each release of the repository. The for
 
 - Effective dates in decisions 0002 and 0003.
 - A time reference in the context of decision 0005.
+- A statement about the squash commit subject in the contributing guidelines.
 
 ## [0.1.0] - 2026-10-31
 
