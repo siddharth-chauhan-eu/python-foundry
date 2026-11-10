@@ -26,6 +26,7 @@ This file records the notable changes in each release of the repository. The for
 - An automatic check of the sign-off of each commit replaces the manual check (decision 0007).
 - The license for code, scripts, notebooks, and configuration is the Apache License 2.0 instead of
   the MIT License. Release 0.1.0 stays under the MIT License (decision 0008).
+- The pull request template asks authors not to repeat results that the pull request checks show.
 
 ### Fixed
 
