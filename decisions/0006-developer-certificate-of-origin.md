@@ -1,6 +1,6 @@
 # 0006. Developer Certificate of Origin
 
-**Status:** Accepted **Date:** 2026-11-02
+**Status:** Superseded **Superseded by:** [decision 0007](0007-automatic-dco-check.md)
 
 ## Context
 

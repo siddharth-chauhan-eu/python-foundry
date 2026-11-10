@@ -14,3 +14,4 @@ by Michael Nygard.
 - [0004. Licenses by content type](0004-licenses-by-content-type.md)
 - [0005. Community health scope](0005-community-health-scope.md)
 - [0006. Developer Certificate of Origin](0006-developer-certificate-of-origin.md)
+- [0007. Automatic Developer Certificate of Origin check](0007-automatic-dco-check.md)
