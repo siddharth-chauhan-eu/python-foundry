@@ -1,6 +1,6 @@
 # 0004. Licenses by content type
 
-**Status:** Accepted **Date:** 2026-10-24
+**Status:** Superseded **Superseded by:** [decision 0008](0008-apache-license-for-code.md)
 
 ## Context
 

@@ -15,3 +15,4 @@ by Michael Nygard.
 - [0005. Community health scope](0005-community-health-scope.md)
 - [0006. Developer Certificate of Origin](0006-developer-certificate-of-origin.md)
 - [0007. Automatic Developer Certificate of Origin check](0007-automatic-dco-check.md)
+- [0008. Apache License 2.0 for code](0008-apache-license-for-code.md)

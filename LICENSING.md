@@ -5,12 +5,12 @@ lists the original content of this repository.
 
 | Content                                                  | License                                                         |
 | -------------------------------------------------------- | --------------------------------------------------------------- |
-| Code, scripts, notebooks, and configuration              | [MIT License](LICENSE)                                          |
+| Code, scripts, notebooks, and configuration              | [Apache License 2.0](LICENSE)                                   |
 | Original prose (Markdown documents) and figures (images) | [CC BY 4.0](LICENSE-CONTENT)                                    |
 | [Code of conduct](CODE_OF_CONDUCT.md)                    | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 
-Content that the table does not list is under the MIT License. A notebook is one file. The MIT
-License covers the notebook, except the third-party material in its saved outputs.
+Content that the table does not list is under the Apache License 2.0. A notebook is one file. The
+Apache License 2.0 covers the notebook, except the third-party material in its saved outputs.
 
 ## Third-party material
 
@@ -19,7 +19,8 @@ it.
 
 ## Reuse
 
-To reuse code, keep the copyright and permission notice from the [MIT License](LICENSE).
+To reuse code, follow the terms of the [Apache License 2.0](LICENSE). They include keeping the
+license text and the [NOTICE](NOTICE) file. Release 0.1.0 stays under the MIT License.
 
 To reuse prose or figures, give this credit and follow [CC BY 4.0](LICENSE-CONTENT):
 

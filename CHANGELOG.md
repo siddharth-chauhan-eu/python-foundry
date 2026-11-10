@@ -14,6 +14,7 @@ This file records the notable changes in each release of the repository. The for
 - Developer Certificate of Origin sign-off for commits (decision 0006).
 - Rules for changelog entries in the contributing guidelines.
 - A section on contributions other than code in the contributing guidelines.
+- A `NOTICE` file with the copyright notice.
 
 ### Changed
 
@@ -23,6 +24,8 @@ This file records the notable changes in each release of the repository. The for
 - The citation metadata lists keywords and a shorter citation message.
 - The decision record guidelines define which decisions need a record and when to write it.
 - An automatic check of the sign-off of each commit replaces the manual check (decision 0007).
+- The license for code, scripts, notebooks, and configuration is the Apache License 2.0 instead of
+  the MIT License. Release 0.1.0 stays under the MIT License (decision 0008).
 
 ### Fixed
 
