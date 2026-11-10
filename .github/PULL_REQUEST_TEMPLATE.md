@@ -18,7 +18,7 @@
 
 ## Verification
 
-<!-- List checks run and their results. Disclose relevant checks that failed or were not run. -->
+<!-- List checks run and their results. Do not repeat results that the pull request checks show. Disclose relevant checks that failed or were not run. -->
 
 ## Impact and maintenance notes
 
