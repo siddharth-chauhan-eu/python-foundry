@@ -22,6 +22,7 @@ This file records the notable changes in each release of the repository. The for
   credit consent-based, and lists an email address as a fallback for reports.
 - The citation metadata lists keywords and a shorter citation message.
 - The decision record guidelines define which decisions need a record and when to write it.
+- An automatic check of the sign-off of each commit replaces the manual check (decision 0007).
 
 ### Fixed
 

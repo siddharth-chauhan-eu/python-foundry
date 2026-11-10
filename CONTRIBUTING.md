@@ -206,9 +206,10 @@ To add a missing sign-off to the last commit, run `git commit --amend --signoff 
 it to every commit of your branch, update your local `main` and run `git rebase --signoff main` from
 your branch. Then run `git push --force-with-lease`.
 
-The maintainer checks the sign-off of each commit by hand before a merge. A pull request with a
-missing sign-off waits until you fix it. The maintainer keeps the sign-off lines in the squash
-commit message.
+The [DCO app](https://github.com/apps/dco) checks the sign-off of each commit in a pull request. The
+sign-off must carry the same name and email address as the commit author. A pull request with a
+missing or mismatched sign-off cannot merge until you fix it. The maintainer keeps the sign-off
+lines in the squash commit message.
 
 The DCO states that your contribution and your sign-off are public. The project keeps this record
 indefinitely and may redistribute it. Your name and email address stay in the Git history. To keep
