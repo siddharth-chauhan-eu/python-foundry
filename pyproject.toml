@@ -21,6 +21,7 @@ docs = [
 dev = [
     { include-group = "docs" },
     "ipykernel>=7.2.0,<8.0.0",
+    "ipywidgets>=8.1.0,<9.0.0",
     "jupyterlab>=4.6.5,<5.0.0",
     "notebook>=7.6.4,<8.0.0",
     "pytest==9.2.0",
