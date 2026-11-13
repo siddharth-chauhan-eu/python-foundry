@@ -15,7 +15,9 @@ sources, dataset revisions, assumptions, and limitations in context.
 - [India Data Jobs Market Analysis](02-data-analytics/data-jobs-analysis/project/job-market-analysis/README.md):
   a notebook study of India's data-job market. It covers market structure, skill demand, skill
   evolution, compensation evidence, and skill strategy for Data Analysts. The dataset revision is
-  pinned.
+  pinned. A
+  [writeup on Kaggle](https://www.kaggle.com/writeups/siddharthchauhaneu/india-data-jobs-market-analysis)
+  is also available.
 - [Dataset Summary](01-python-fundamentals/project/dataset-summary/README.md): a command-line tool
   that inspects the structure of a CSV file and writes a text summary and a JSON report. It uses
   only the Python standard library and has tests.

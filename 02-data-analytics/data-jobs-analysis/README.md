@@ -46,6 +46,13 @@ otherwise.
 | 04  | `04_trending_skills_analysis.ipynb` | Skill frequency · monthly skill trends · heatmap                 |
 | 05  | `05_skill_pay_analysis.ipynb`       | Highest paying skills · in-demand skills · reach vs pay          |
 
+Kaggle copies of notebooks 03 to 05:
+[Job Demand Analysis](https://www.kaggle.com/code/siddharthchauhaneu/germany-data-jobs-job-demand-analysis),
+[Trending Skills Analysis](https://www.kaggle.com/code/siddharthchauhaneu/germany-data-jobs-trending-skills-analysis),
+and
+[Skill Pay Analysis](https://www.kaggle.com/code/siddharthchauhaneu/germany-data-jobs-skill-pay-analysis).
+Each Kaggle notebook states how it differs from the repository copy.
+
 ### 01 — Pandas Basics
 
 Introduces the data loading, cleanup, and aggregation workflow used throughout the module. Covers
@@ -124,7 +131,9 @@ structure, skill architecture, skill evolution, salary analysis, and a Pareto fr
 Data Analyst skill strategy.
 
 See the [India Data Jobs Market Analysis](project/job-market-analysis/README.md) for full
-documentation.
+documentation. A
+[writeup on Kaggle](https://www.kaggle.com/writeups/siddharthchauhaneu/india-data-jobs-market-analysis)
+is also available.
 
 ## Structure
 
