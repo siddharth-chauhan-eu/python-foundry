@@ -1,6 +1,6 @@
 [project]
 name = "python-foundry"
-version = "0.1.0"
+version = "0.2.0"
 description = "Python projects with locked environments and documented sources"
 readme = "README.md"
 requires-python = ">=3.11"

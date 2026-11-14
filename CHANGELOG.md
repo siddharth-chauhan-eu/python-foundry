@@ -1,10 +1,13 @@
 # Changelog
 
 This file records the notable changes in each release of the repository. The format follows
-[Keep a Changelog](https://keepachangelog.com/). The rules for entries are in the
-[Changelog](CONTRIBUTING.md#changelog) section of the contributing guidelines.
+[Keep a Changelog](https://keepachangelog.com/). Release numbers label snapshots and promise no
+compatibility. The rules for entries are in the [Changelog](CONTRIBUTING.md#changelog) section of
+the contributing guidelines.
 
 ## [Unreleased]
+
+## [0.2.0] - 2026-11-14
 
 ### Added
 
@@ -47,4 +50,5 @@ This file records the notable changes in each release of the repository. The for
   security policy, and decision records.
 
 [0.1.0]: https://github.com/siddharth-chauhan-eu/python-foundry/releases/tag/v0.1.0
-[unreleased]: https://github.com/siddharth-chauhan-eu/python-foundry/compare/v0.1.0...HEAD
+[0.2.0]: https://github.com/siddharth-chauhan-eu/python-foundry/compare/v0.1.0...v0.2.0
+[unreleased]: https://github.com/siddharth-chauhan-eu/python-foundry/compare/v0.2.0...HEAD
