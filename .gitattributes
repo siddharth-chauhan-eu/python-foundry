@@ -2,3 +2,7 @@
 
 # Keep the CC BY 4.0 legal code identical to the official text, including its last blank line.
 LICENSE-CONTENT whitespace=-blank-at-eof
+
+# Keep the World Bank test fixture identical to the downloaded file, including its line
+# endings.
+tests/fixtures/dataset-summary/world_bank_gdp.csv -text whitespace=cr-at-eol

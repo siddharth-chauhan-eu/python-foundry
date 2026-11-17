@@ -7,6 +7,11 @@ the contributing guidelines.
 
 ## [Unreleased]
 
+### Added
+
+- A test that runs the dataset summary tool on a World Bank GDP export, with the export as a test
+  fixture and a third-party notice.
+
 ## [0.2.0] - 2026-11-14
 
 ### Added
