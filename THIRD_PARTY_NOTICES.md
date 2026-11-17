@@ -1,7 +1,8 @@
 # Third-party notices
 
 This repository uses material from third parties. This file lists each item with its license. The
-[licensing map](LICENSING.md) covers the original content.
+[licensing map](LICENSING.md) covers the original content. Entries are listed in the order they were
+added.
 
 ## Data Jobs dataset
 
@@ -12,6 +13,15 @@ This repository uses material from third parties. This file lists each item with
 - **Use:** The notebooks load the dataset at run time. The repository does not include the dataset
   files. Saved notebook outputs show unmodified excerpts of the dataset, such as selected rows and
   columns. Charts and tables are derived from the dataset.
+
+## Developer Certificate of Origin
+
+- **Source:** [Developer Certificate of Origin, version 1.1](https://developercertificate.org/) by
+  The Linux Foundation and its contributors
+- **License:** The text states that everyone may copy and distribute verbatim copies, and that
+  changing the text is not allowed.
+- **Use:** The file `DCO` holds the text without changes. It is not original content of this
+  repository, and the licenses in the [licensing map](LICENSING.md) do not cover it.
 
 ## World Bank GDP data
 
@@ -27,16 +37,8 @@ This repository uses material from third parties. This file lists each item with
 - **Retrieved:** 2026-11-17, with the CSV download link on the indicator page. The file states the
   last updated date 2026-11-11. Its SHA-256 is
   `566e0c9d13467d289eb6e98e79b7a51ceffa57a1d1c22bb548631246958f7141`.
-- **Use:** The file `tests/fixtures/dataset-summary/world_bank_gdp.csv` is the data file of the
-  downloaded archive, extracted and renamed, with its content unmodified. It is a test fixture for
-  the dataset summary tool. It is not original content of this repository, and the licenses in the
-  [licensing map](LICENSING.md) do not cover it.
-
-## Developer Certificate of Origin
-
-- **Source:** [Developer Certificate of Origin, version 1.1](https://developercertificate.org/) by
-  The Linux Foundation and its contributors
-- **License:** The text states that everyone may copy and distribute verbatim copies, and that
-  changing the text is not allowed.
-- **Use:** The file `DCO` holds the text without changes. It is not original content of this
-  repository, and the licenses in the [licensing map](LICENSING.md) do not cover it.
+- **Use:** The file `tests/fixtures/dataset-summary/world_bank_gdp.csv` is the data file
+  `API_NY.GDP.MKTP.CD_DS2_en_csv_v2_59541.csv` from the downloaded archive
+  `API_NY.GDP.MKTP.CD_DS2_en_csv_v2_59541.zip`, extracted and renamed, with its content unmodified.
+  It is a test fixture for the dataset summary tool. It is not original content of this repository,
+  and the licenses in the [licensing map](LICENSING.md) do not cover it.
