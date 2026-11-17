@@ -128,7 +128,8 @@ Validated against:
 
 - structured datasets
 - edge-case synthetic dataset (sample_data.csv)
-- real-world messy datasets (e.g., World Bank exports)
+- a World Bank export of GDP (current US$), kept as a test fixture (see the
+  [third-party notices](../../../THIRD_PARTY_NOTICES.md))
 
 ## Design principles
 

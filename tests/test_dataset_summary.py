@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+import csv
 import json
+import shutil
 import subprocess
 import sys
 
@@ -10,6 +12,14 @@ from helpers import ROOT, load_module
 
 SCRIPT = "01-python-fundamentals/project/dataset-summary/dataset_summary.py"
 dataset_summary = load_module("dataset_summary", SCRIPT)
+
+WORLD_BANK_FIXTURE = ROOT / "tests/fixtures/dataset-summary/world_bank_gdp.csv"
+WORLD_BANK_IDENTIFIERS = [
+    "Country Name",
+    "Country Code",
+    "Indicator Name",
+    "Indicator Code",
+]
 
 STANDARD_CSV = (
     "country,year,gdp,notes\n"
@@ -109,3 +119,67 @@ def test_cli_reports_unsupported_structure(tmp_path):
 
     assert "Parsing failed" in result.stdout
     assert not (tmp_path / "summary_report.json").exists()
+
+
+def test_cli_summarizes_world_bank_gdp_export(tmp_path):
+    assert WORLD_BANK_FIXTURE.is_file(), f"Missing fixture: {WORLD_BANK_FIXTURE}"
+    csv_path = tmp_path / "world_bank_gdp.csv"
+    shutil.copyfile(WORLD_BANK_FIXTURE, csv_path)
+
+    result = subprocess.run(
+        [sys.executable, "-I", str(ROOT / SCRIPT), str(csv_path)],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+    assert result.returncode == 0
+    assert "Summary generated successfully." in result.stdout
+    json_path = tmp_path / "summary_report.json"
+    text_path = tmp_path / "summary_report.txt"
+    assert json_path.is_file()
+    assert text_path.is_file()
+    report = json.loads(json_path.read_text("utf-8"))
+    text = text_path.read_text("utf-8")
+
+    # Read the fixture independently of the tool under test.
+    with csv_path.open(encoding="utf-8-sig", newline="") as file:
+        lines = list(csv.reader(file))
+    header_index = next(i for i, row in enumerate(lines) if row[:1] == ["Country Name"])
+    header = [name for name in lines[header_index] if name.strip()]
+    data_rows = [row for row in lines[header_index + 1 :] if any(row)]
+
+    # The header after the export preamble is found, and the empty trailing field of
+    # each line is not a column.
+    columns = report["columns"]
+    assert columns == header
+    assert columns[: len(WORLD_BANK_IDENTIFIERS)] == WORLD_BANK_IDENTIFIERS
+    year_columns = [name for name in columns if name.isdigit()]
+    assert len(year_columns) >= 30
+    assert report["total_rows"] == len(data_rows)
+    assert report["total_rows"] >= 100
+    assert report["total_columns"] == len(columns)
+
+    # Missing values and types are reported for every column and agree with the data.
+    for key in ("missing", "missing_percentage", "column_types"):
+        assert set(report[key]) == set(columns)
+    expected_missing = {
+        name: sum(1 for row in data_rows if not row[index].strip())
+        for index, name in enumerate(header)
+    }
+    assert report["missing"] == expected_missing
+    for name in columns:
+        percent = round(report["missing"][name] / report["total_rows"] * 100, 2)
+        assert report["missing_percentage"][name] == percent
+    for name in WORLD_BANK_IDENTIFIERS:
+        assert report["column_types"][name] == "non-numeric"
+    for name in year_columns:
+        assert report["column_types"][name] in {"numeric", "empty"}
+
+    # The text report carries the same figures.
+    assert "Dataset Summary Report" in text
+    assert "File: world_bank_gdp.csv" in text
+    assert f"Total Rows: {report['total_rows']}" in text
+    assert f"Total Columns: {report['total_columns']}" in text
+    for name in columns:
+        assert f"- {name}\n" in text
