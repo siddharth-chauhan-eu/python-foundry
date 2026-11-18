@@ -13,6 +13,8 @@ the contributing guidelines.
   fixture and a third-party notice.
 - Support, remediation, and release verification sections in the security policy, a tests section in
   the contributing guidelines, and an OpenSSF Best Practices badge in the README.
+- A dependency review check on pull requests that blocks a change that adds a dependency with a
+  known vulnerability of high or critical severity.
 
 ## [0.2.0] - 2026-11-14
 

@@ -48,7 +48,8 @@ newer release is published. Earlier releases receive no security updates.
 Dependabot alerts and code scanning alerts of high or critical severity are fixed before a release
 is published. Other findings are handled in routine maintenance. A finding that does not affect this
 repository may be dismissed with a recorded reason. A pull request that introduces a high or
-critical code scanning alert cannot be merged.
+critical code scanning alert, or adds a dependency with a high or critical known vulnerability,
+cannot be merged.
 
 ## Verifying releases
 
