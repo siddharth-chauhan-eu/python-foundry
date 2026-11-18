@@ -55,3 +55,25 @@ cannot be merged.
 
 A release tag is a signed annotated tag. The tag page on GitHub shows a Verified label that confirms
 the signature and the signing identity.
+
+## Security assessment
+
+This assessment covers the code and the automation in the repository as of the latest release. It
+names the most likely problems and the problems with the most impact. The repository runs no network
+service and stores no user data.
+
+- **Untrusted input to the command-line tool.** The Dataset Summary tool reads a CSV file that the
+  user selects. It loads the whole file into memory, so a very large file can exhaust memory. The
+  tool does not run, evaluate, or fetch anything that the file names. It produces two report files.
+- **Output files.** The tool writes `summary_report.txt` and `summary_report.json` next to the input
+  file and replaces files with those names. A symbolic link with one of these names redirects the
+  write to the target of the link.
+- **Notebooks.** Running a notebook runs its code with the permissions of the user, so a notebook
+  from an untrusted source is a risk. The notebooks download a public dataset at a pinned revision,
+  so the input does not change silently.
+- **Dependencies.** A vulnerable or malicious release of a third-party package is the most likely
+  route to harm. `uv.lock` pins every package. Dependabot raises alerts and updates, and a
+  dependency review check blocks a pull request that adds a vulnerable dependency.
+- **Automation.** Workflows have read-only repository permissions, use actions pinned to full commit
+  SHAs, and do not persist credentials. The repository settings restrict which actions may run. A
+  change to the default branch needs a pull request, signed commits, and passing checks.

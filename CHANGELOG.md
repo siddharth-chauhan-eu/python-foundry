@@ -15,6 +15,8 @@ the contributing guidelines.
   the contributing guidelines, and an OpenSSF Best Practices badge in the README.
 - A dependency review check on pull requests that blocks a change that adds a dependency with a
   known vulnerability of high or critical severity.
+- A maintainer section in the contributing guidelines and a security assessment in the security
+  policy.
 
 ## [0.2.0] - 2026-11-14
 
