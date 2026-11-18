@@ -75,5 +75,6 @@ service and stores no user data.
   route to harm. `uv.lock` pins every package. Dependabot raises alerts and updates, and a
   dependency review check blocks a pull request that adds a vulnerable dependency.
 - **Automation.** Workflows have read-only repository permissions, use actions pinned to full commit
-  SHAs, and do not persist credentials. The repository settings restrict which actions may run. A
-  change to the default branch needs a pull request, signed commits, and passing checks.
+  SHAs, and do not persist credentials. The Scorecard workflow also requests an identity token to
+  publish its results. The repository settings restrict which actions may run. A change to the
+  default branch needs a pull request, signed commits, and passing checks.
