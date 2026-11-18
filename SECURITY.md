@@ -37,3 +37,20 @@ date. When no date is agreed, the reporter may disclose after the period.
 
 The maintainer credits the reporter in a public advisory or in release notes only with the
 reporter's consent.
+
+## Supported releases
+
+Security fixes apply to the default branch and the latest release. A release is supported until a
+newer release is published. Earlier releases receive no security updates.
+
+## Remediation of findings
+
+Dependabot alerts and code scanning alerts of high or critical severity are fixed before a release
+is published. Other findings are handled in routine maintenance. A finding that does not affect this
+repository may be dismissed with a recorded reason. A pull request that introduces a high or
+critical code scanning alert cannot be merged.
+
+## Verifying releases
+
+A release tag is a signed annotated tag. The tag page on GitHub shows a Verified label that confirms
+the signature and the signing identity.
