@@ -3,6 +3,7 @@
 [![Verification](https://github.com/siddharth-chauhan-eu/python-foundry/actions/workflows/verification.yml/badge.svg)](https://github.com/siddharth-chauhan-eu/python-foundry/actions/workflows/verification.yml)
 [![DOI](https://zenodo.org/badge/1189535279.svg)](https://doi.org/10.5281/zenodo.23829394)
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/16833/badge)](https://www.bestpractices.dev/projects/16833)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/siddharth-chauhan-eu/python-foundry/badge)](https://scorecard.dev/viewer/?uri=github.com/siddharth-chauhan-eu/python-foundry)
 
 Python projects built to be reproducible and traceable. Each project locks its environment and
 documents its sources, assumptions, and limitations.

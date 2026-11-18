@@ -17,7 +17,8 @@ the contributing guidelines.
   known vulnerability of high or critical severity.
 - A maintainer section in the contributing guidelines and a security assessment in the security
   policy.
-- An OpenSSF Scorecard workflow that publishes the repository's results on the default branch.
+- An OpenSSF Scorecard workflow that publishes the repository's results on the default branch, and a
+  Scorecard badge in the README.
 
 ## [0.2.0] - 2026-11-14
 
