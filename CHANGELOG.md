@@ -11,6 +11,8 @@ the contributing guidelines.
 
 - A test that runs the dataset summary tool on a World Bank GDP export, with the export as a test
   fixture and a third-party notice.
+- Support, remediation, and release verification sections in the security policy, a tests section in
+  the contributing guidelines, and an OpenSSF Best Practices badge in the README.
 
 ## [0.2.0] - 2026-11-14
 

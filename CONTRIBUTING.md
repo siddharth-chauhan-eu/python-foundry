@@ -30,7 +30,7 @@ A pull request should:
 
 - address one coherent change;
 - explain the problem and the chosen approach;
-- include tests or other verification appropriate to the change;
+- include tests (see [Tests](#tests)) and other verification appropriate to the change;
 - update documentation when behavior, setup, or commands change;
 - add a changelog entry when the change is notable (see [Changelog](#changelog)); and
 - avoid unrelated refactors and formatting changes.
@@ -48,6 +48,15 @@ Changes reach `main` through pull requests, and each pull request is squash merg
 title or the subject of its commit becomes the commit subject, so write both in the commit format
 below. Write the description in the pull request template. The verification workflow must pass
 before a merge.
+
+## Tests
+
+A change to the behavior of code that has tests adds or updates a test in the same pull request. A
+major change adds a test for the new behavior. A major change is one that adds a command-line
+option, a supported input, or an output format, or that fixes a defect in code under test.
+
+Changes to documentation, notebooks, and formatting need no test. A notebook change is verified by
+running the notebook. Tests are in the `tests` directory and run with the verification command.
 
 ## Commit messages
 
