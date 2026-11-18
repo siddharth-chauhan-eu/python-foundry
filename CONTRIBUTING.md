@@ -14,6 +14,14 @@ welcome:
 - Share it with people who may find it useful.
 - Give feedback on the content, such as an unclear explanation or an error in an exercise.
 
+## Maintainer
+
+The repository has one maintainer, Siddharth Chauhan
+([`siddharth-chauhan-eu`](https://github.com/siddharth-chauhan-eu)). The maintainer owns the
+repository and is the only person with write access, with access to the repository settings and
+rulesets, and with the key that signs commits and release tags. The maintainer reviews
+contributions, decides what is merged, and publishes releases.
+
 ## Before opening an issue
 
 1. Search existing issues first.
