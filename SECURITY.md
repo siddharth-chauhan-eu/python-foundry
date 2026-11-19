@@ -58,9 +58,9 @@ the signature and the signing identity.
 
 ## Security assessment
 
-This assessment covers the code and the automation in the repository as of the latest release. It
-names the most likely problems and the problems with the most impact. The repository runs no network
-service and stores no user data.
+This assessment covers the code and the automation on the default branch. It names the most likely
+problems and the problems with the most impact. The repository runs no network service and stores no
+user data.
 
 - **Untrusted input to the command-line tool.** The Dataset Summary tool reads a CSV file that the
   user selects. It loads the whole file into memory, so a very large file can exhaust memory. The
